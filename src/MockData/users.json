@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "name": "Harshal Ahire",
+            "nid": "N633D3",
+            "email": "hahire@travelers.com"
+        },
+        {
+            "name": "Rohit Jagtap",
+            "nid": "N6334D",
+            "email": "rjagtap@travelers.com"
+        },
+        {
+            "name": "Chirag Doshi",
+            "nid": "N7234J",
+            "email": "cdoshi@travelers.com"
+        },
+        {
+            "name": "Satish Kumar",
+            "nid": "N234GG",
+            "email": "skumar@travelers.com"
+        }
+    ]
+}
