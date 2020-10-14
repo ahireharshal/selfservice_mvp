@@ -1,0 +1,19 @@
+.topmargin  {
+    margin-top: 20%!important;
+}
+
+.outlined-basic{
+   width: 50%!important;
+}
+
+
+.MuiFormControl-root{
+    margin-left: 10px!important;
+    width: 459px;
+}
+
+
+.MuiButtonBase-root{
+    margin-left: 10px!important;
+
+}

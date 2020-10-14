@@ -1,22 +1,26 @@
 {
     "users": [
         {
-            "name": "Harshal Ahire",
+            "first_name": "Harshal",
+            "last_name":"Ahire",
             "nid": "N633D3",
             "email": "hahire@travelers.com"
         },
         {
-            "name": "Rohit Jagtap",
+            "name": "Rohit",
+            "last_name":"Jagtap",
             "nid": "N6334D",
             "email": "rjagtap@travelers.com"
         },
         {
-            "name": "Chirag Doshi",
+            "name": "Chirag",
+            "last_name":"Doshi",
             "nid": "N7234J",
             "email": "cdoshi@travelers.com"
         },
         {
-            "name": "Satish Kumar",
+            "name": "Satish",
+            "last_name":"Kumar",
             "nid": "N234GG",
             "email": "skumar@travelers.com"
         }
