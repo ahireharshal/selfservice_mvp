@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import { Button, Grid } from '@material-ui/core';
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
 const UserNotFoundErrMsg = () => {
     return (
-        <Alert severity="error">Not found any user for given email id. please try again!</Alert>
+        <Alert severity="error">User not found for given email id. please try again!</Alert>
     )
 }
 
@@ -67,6 +67,12 @@ function Login() {
     }
 
     const classes = useStyles();
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+
 
     return (
         <Grid container spacing={10}>

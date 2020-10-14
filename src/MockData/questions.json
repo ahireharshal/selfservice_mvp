@@ -1,0 +1,35 @@
+{
+    "questions":[
+        {
+            "id":"Q101",
+            "text":"What is your knowledge level on technology?",
+            "role":"Project Manager",
+            "option":["Beginner", "Medium", "High", "Expert"]
+            
+        },
+        {
+            "id":"Q102",
+            "text":"What is your Business persona?",
+            "role":"Project Manager",
+            "option":["Business User", "IT User", "Data Engineer", "Data Scientist"]
+        },
+        {
+            "id":"Q103",
+            "text":"Which application(s) you generally access?",
+            "role":"Project Manager",
+            "option":["Amazon Web Services (AWS)", "Snowflake", "Talend", "MicroStrategy", "Databricks"]
+        },
+        {
+            "id":"Q104",
+            "text":"Which feature(s) of the application are most important to you?",
+            "role":"Project Manager",
+            "option":["Feature A", "Feature B", "Feature C", "Feature D"]
+        },
+        {
+            "id":"Q105",
+            "text":"What is your application usage frequency?",
+            "role":"Project Manager",
+            "option":["Low - On a monthly basis", "Moderate - On a weekly basis", "Heavy - Quite frequently on a daily basis"]
+        }
+    ]       
+}

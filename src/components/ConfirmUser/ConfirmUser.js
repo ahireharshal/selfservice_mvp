@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
+import Dashboard from '../Dashboard/Dashboard'
+
 
 const ConfirmUser = ({ user, role, handleBackButton }) => {
+
+
+
+    const [showDashboard, setShowDashBoard] =useState(false)
+const [showConfirmPage, setShowConfirmPage] = useState(true)
+
+const handleBackButton2 = () => {
+    setShowConfirmPage(true)
+    setShowDashBoard(false)
+}
+
+
     return (
         <div>
 
-            <Button size="small" variant="contained" onClick={() => {
+{ showConfirmPage &&  <div> <Button size="small" variant="contained" onClick={() => {
                 handleBackButton()
             }}>
                 Go back
@@ -36,14 +50,21 @@ const ConfirmUser = ({ user, role, handleBackButton }) => {
             </Typography>
             <br></br>
             <br></br>
-            <Button size="large" variant="contained" color="secondary">
+            <Button size="large" variant="contained" color="secondary" onClick={()=>{
+                setShowDashBoard(true)
+                setShowConfirmPage(false)
+                }}>
                 Correct
                 </Button>
 
             <Button size="large" variant="outlined" color="secondary">
                 Incorrect
-                </Button>
+                </Button></div>
+        }
+        { showDashboard && <Dashboard handleBackButton2= {handleBackButton2}/>}
+
         </div>
+
     )
 }
 export default ConfirmUser;
