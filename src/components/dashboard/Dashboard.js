@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -29,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
 
 const Dashboard = ({ handleBackButton2 }) => {
     const [value, setValue] = React.useState([]);
+
+
+    console.log("xxxxxx ", value)
     const [showDash, setShowDash] = React.useState(true)
 const [showReport, setShowReport] = React.useState(false)
     const getValue = (i) => {
@@ -40,10 +42,7 @@ const [showReport, setShowReport] = React.useState(false)
 
     const handleChange = (event) => {
         let p = { q: event.target.name, a: event.target.value }
-        console.log(event.target.name)
 
-
-        event.target.value = "Talend"
         let q = value.filter(v => v.q !== event.target.name)
 
 
@@ -85,7 +84,8 @@ const [showReport, setShowReport] = React.useState(false)
                                 handleChange(event)
                             }}>
                                 {v.option.map((v, i) => {
-                                    return <FormControlLabel value={v} key={i} control={<Radio />} label={v} onClick={(event) => {
+
+                                    return <FormControlLabel value={v.weight} key={i} control={<Radio />} label={v.text} onClick={(event) => {
 
                                     }} />
                                 })}

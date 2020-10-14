@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import './Report.css'
 import Button from "@material-ui/core/Button";
@@ -8,36 +8,49 @@ import {
 } from "@material-ui/data-grid";
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import MyResponsiveRadar from '../Chart/ReportRadar'
-import ComplexGrid from '../Chart/score'
 const data = [
     {
-      "rating": "Beginner",
-      "AWS": 53,
-      "Coding": 54,
-      "Security": 23
+        "rating": "Beginner",
+        "AWS": 800,
+        "Coding": 700,
+        "Security": 600
     },
     {
         "rating": "Competent",
-        "AWS": 13,
-        "Coding": 111,
-        "Security": 43
-      },    {
+        "AWS": 355,
+        "Coding": 800,
+        "Security": 400
+    }, {
         "rating": "Expert",
-        "AWS": 234,
-        "Coding": 111,
-        "Security": 33
-      },
-  ]
+        "AWS": 500,
+        "Coding": 550,
+        "Security": 800
+    },
+]
 
 const useStyles = makeStyles((theme) => ({
-    button: {
-        margin: theme.spacing(1),
+    root: {
+        flexGrow: 1,
+    },
+    paper: {
+        padding: theme.spacing(4),
+        maxWidth: 200,
+    },
+    image: {
+        width: 128,
+        height: 128,
+    },
+    img: {
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+        maxHeight: '100%',
     },
 }));
-
 
 const columns = [
 
@@ -65,8 +78,8 @@ const columns = [
 
 const columns2 = [
 
-    { field: 'id', headerName: 'ID', width: 70 }, 
-    { field: 'desc', headerName: 'Descrption', width: 250 }, 
+    { field: 'id', headerName: 'ID', width: 70 },
+    { field: 'desc', headerName: 'Descrption', width: 250 },
 
     {
         field: "link",
@@ -75,7 +88,7 @@ const columns2 = [
         width: 250,
         disableClickEventBubbling: true,
         renderCell: () => {
-            return  <a href="https://www.w3schools.com" rel="noopener noreferrer" target="_blank">Visit W3Schools</a>
+            return <a href="https://www.w3schools.com" rel="noopener noreferrer" target="_blank">Visit W3Schools</a>
         }
     },
 
@@ -84,15 +97,15 @@ const columns2 = [
 
 
 const rows2 = [
-    { id: 1, desc: 'AWS EC2'},
-    { id: 2, desc: 'AWS handbook'},
+    { id: 1, desc: 'AWS EC2' },
+    { id: 2, desc: 'AWS handbook' },
 
-    { id: 3, desc: 'Terradata guide'},
-    { id: 4, desc: 'step by step talend'},
+    { id: 3, desc: 'Terradata guide' },
+    { id: 4, desc: 'step by step talend' },
 
-    { id: 5, desc: 'Snowflake guide'},
+    { id: 5, desc: 'Snowflake guide' },
 
-    
+
 
 ]
 
@@ -122,9 +135,22 @@ const Report = ({ value }) => {
     const classes = useStyles();
 
 
+    console.log("bbbbb ", value)
+
+    let score = 0
+    let total = 0
+
+
+    value.forEach(v => {
+        score = score + parseInt(v.a)
+        total = total + 100
+    })
+    console.log("score", score)
+    console.log("total", total)
+
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
 
     return (
@@ -138,36 +164,62 @@ const Report = ({ value }) => {
 
             </Typography>
 
-  <hr />
+            <hr />
 
 
-  <Grid container spacing={3}>
-        <Grid item xs>
-        <Typography variant="h6" gutterBottom>
-            <br></br>
+
+
+
+            <Grid container spacing={3}>
+                <Grid item xs>
+                    <Typography variant="h6" gutterBottom>
+                        <br></br>
                 Below score calculated based on the anwser that you have provided.
 
             </Typography>
 
-<ComplexGrid />
-
-        </Grid>
-        <Grid item xs>
-        <div className="report-chart">
-
-<MyResponsiveRadar data={data} />
-
-</div>
-        </Grid>
-        </Grid>
 
 
 
+                    <Paper className={classes.paper}>
+                        <Grid container spacing={0}>
+
+                            <Grid item xs={0} sm container>
+                                <Grid item xs container direction="column" spacing={0}>
+                                    <Grid item xs>
+                                        <Typography variant="h6" gutterBottom>
+                                            Overall Score
+                </Typography>
+                                        <Typography variant="h4" gutterBottom>
+                                            {score}/{total}
+                                        </Typography>
+
+
+                                    </Grid>
+
+                                </Grid>
+
+                            </Grid>
+                        </Grid>
+                    </Paper>
+
+                </Grid>
+                <Grid item xs>
+                    <div className="report-chart">
+
+                        <MyResponsiveRadar data={data} />
+
+                    </div>
+                </Grid>
+            </Grid>
 
 
 
 
-  
+
+
+
+
             <br></br>
             <br></br>
 
@@ -176,8 +228,8 @@ const Report = ({ value }) => {
                     <Typography variant="h6" gutterBottom>
                         Training Recommendations
                         <br></br>
-            <br></br>
-            </Typography>
+                        <br></br>
+                    </Typography>
                 </div>
                 <div>
                     <div style={{ height: 400, width: '100%' }}>
@@ -195,8 +247,8 @@ const Report = ({ value }) => {
                     <Typography variant="h6" gutterBottom>
                         Self Service Tools and Guide Links
                         <br></br>
-            <br></br>
-            </Typography>
+                        <br></br>
+                    </Typography>
                 </div>
                 <div>
                     <div style={{ height: 400, width: '100%' }}>

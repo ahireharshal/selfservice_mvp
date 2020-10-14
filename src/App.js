@@ -5,6 +5,7 @@ import './App.css'
 
 
 import Report from './components/Report/Report'
+import Dashboard from './components/Dashboard/Dashboard';
 const App = () => {
     return (
         <div>
@@ -24,7 +25,6 @@ const App = () => {
 
             </Typography>
             </div>
-
 
 
 

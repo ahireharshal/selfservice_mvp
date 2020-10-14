@@ -4,32 +4,81 @@
             "id":"Q101",
             "text":"What is your knowledge level on technology?",
             "role":"Project Manager",
-            "option":["Beginner", "Medium", "High", "Expert"]
+            "option":[{
+                "text":"Beginner",
+                "weight":"10"
+            },
+            {
+                "text":"Medium",
+                "weight":"20"
+            },
+            {
+                "text":"High",
+                "weight":"55"
+            },
+            {
+                "text":"Expert",
+                "weight":"95"
+            }
+        ]
             
         },
         {
             "id":"Q102",
             "text":"What is your Business persona?",
             "role":"Project Manager",
-            "option":["Business User", "IT User", "Data Engineer", "Data Scientist"]
+            "option":[
+                {"text":"Business User", "weight":"10"},
+                {"text":"IT User", "weight":"20"},
+
+                {"text":"Data Engineer", "weight":"60"},
+
+                {"text":"Data Scientist", "weight":"95"}
+
+            ]
         },
         {
             "id":"Q103",
             "text":"Which application(s) you generally access?",
             "role":"Project Manager",
-            "option":["Amazon Web Services (AWS)", "Snowflake", "Talend", "MicroStrategy", "Databricks"]
+            "option":[
+                {"text":"Amazon Web Services (AWS)","weight":"15"},
+                {"text":"Snowflake","weight":"35"},
+
+                {"text":"Talend","weight":"40"},
+
+                {"text":"MicroStrategy","weight":"60"},
+
+                {"text":"Databricks","weight":"90"}
+
+            ]
         },
         {
             "id":"Q104",
             "text":"Which feature(s) of the application are most important to you?",
             "role":"Project Manager",
-            "option":["Feature A", "Feature B", "Feature C", "Feature D"]
+            "option":[
+                {"text":"Feature A", "weight":"10"},
+                {"text":"Feature B", "weight":"20"},
+
+                {"text":"Feature C", "weight":"70"},
+
+                {"text":"Feature D", "weight":"95"}
+
+            ]
         },
         {
             "id":"Q105",
             "text":"What is your application usage frequency?",
             "role":"Project Manager",
-            "option":["Low - On a monthly basis", "Moderate - On a weekly basis", "Heavy - Quite frequently on a daily basis"]
+            "option":[
+                {"text":"Low - On a monthly basis", "weight":"10"},
+                {"text":"Moderate - On a weekly basis", "weight":"40"},
+
+                {"text":"Heavy - Quite frequently on a daily basis", "weight":"90"}
+
+
+            ]
         }
     ]       
 }
