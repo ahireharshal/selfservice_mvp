@@ -45,7 +45,6 @@ function Login() {
     const [showConfirmUser, setShowConfirmUser] = React.useState(false)
     const [user, setUser] = React.useState({})
     const [showLogin, setShowLogin] = React.useState(true)
-    console.log(userNotFoundErr)
 
     const handleChange = (event) => {
         setRole(event.target.value);
