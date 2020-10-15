@@ -3,7 +3,7 @@ import Login from './components/Login/Login'
 import Typography from '@material-ui/core/Typography';
 import './App.css'
 
-
+import CookBooks from './components/Cookbooks/Cookbook'
 import Report from './components/Report/Report'
 import Dashboard from './components/Dashboard/Dashboard';
 const App = () => {
@@ -25,7 +25,6 @@ const App = () => {
 
             </Typography>
             </div>
-
 
 
         </div>

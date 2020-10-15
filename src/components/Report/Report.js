@@ -12,6 +12,12 @@ import Paper from '@material-ui/core/Paper';
 
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import MyResponsiveRadar from '../Chart/ReportRadar'
+
+
+import CookBooks from '../../components/Cookbooks/Cookbook'
+
+
+
 const data = [
     {
         "rating": "Beginner",
@@ -260,6 +266,12 @@ const Report = ({ value }) => {
             <br></br>
             <br></br>
 
+
+
+            <CookBooks />
+
+            <br></br>
+            <br></br>
             <Button size="large" variant="contained" color="secondary" onClick={() => {
                 window.location.reload();
             }}>
