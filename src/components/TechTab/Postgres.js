@@ -16,7 +16,7 @@ import Cookbook from '../Cookbooks/Cookbook'
 import Badge from '../Badge/Badge'
 import {p_training_rows, p_training_cols} from './training'
 import {p_book_rows, p_book_cols} from './handbooks'
-
+import {p_cert_rows, p_cert_cols} from './certfications'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -120,6 +120,21 @@ const Postgre = () => {
             </Grid>
 
 
+
+            <div>
+                <Typography variant="h6" gutterBottom>
+                    <br></br>
+                    <br></br>
+                     Certfications
+                     <br></br>
+                    <br></br>
+                </Typography>
+            </div>
+            <div>
+                <div style={{ height: 400, width: '100%' }}>
+                    <DataGrid rows={p_cert_rows} columns={p_cert_cols} pageSize={5} />
+                </div>
+            </div>
 
 
         </div>
