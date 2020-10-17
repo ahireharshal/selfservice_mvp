@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import Rating from '../Rating/Rating'
 
-export const p_cert_cols = [
+export const cert_cols = [
 
 
     { field: 'id', headerName: 'ID', width: 80 },
@@ -37,5 +37,17 @@ export const p_cert_rows = [
 
 
 ];
+
+
+export const n_cert_rows = [
+    { id: 'N871', name: 'Nodejs Associate', link: 'https://openjsf.org/certification/', type: 'Internal' },
+
+    { id: 'N561', name: 'Nodejs: Professional', link: 'https://openjsf.org/certification/', type: 'External' },
+
+
+
+
+];
+
 
 

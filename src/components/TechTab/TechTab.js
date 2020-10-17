@@ -15,6 +15,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './TechTab.css'
 
+import Nodejs from './Nodejs'
+
 
 
 
@@ -122,7 +124,7 @@ export default function ScrollableTabsButtonForce() {
     <Postgres />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <Nodejs />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three

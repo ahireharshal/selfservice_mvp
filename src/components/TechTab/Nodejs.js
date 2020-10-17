@@ -14,9 +14,9 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
 import Badge from '../Badge/Badge'
-import {p_training_rows, training_cols} from './training'
-import {p_book_rows, book_cols} from './handbooks'
-import {p_cert_rows, cert_cols} from './certfications'
+import {n_training_rows, training_cols} from './training'
+import {n_book_rows, book_cols} from './handbooks'
+import {n_cert_rows, cert_cols} from './certfications'
 import VDO from '../CardMedia/CardMedia'
 
 const useStyles = makeStyles((theme) => ({
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Postgre = () => {
+const Nodejs = () => {
 
 
     const classes = useStyles();
@@ -69,8 +69,8 @@ const Postgre = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={p_training_rows} columns={training_cols} pageSize={5}  />
+                <div style={{ height: 300, width: '100%' }}>
+                    <DataGrid rows={n_training_rows} columns={training_cols} pageSize={5}  />
                 </div>
             </div>
 
@@ -86,7 +86,7 @@ const Postgre = () => {
             </div>
             <div>
                 <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={p_book_rows} columns={book_cols} pageSize={5} />
+                    <DataGrid rows={n_book_rows} columns={book_cols} pageSize={5} />
                 </div>
             </div>
 
@@ -131,15 +131,14 @@ const Postgre = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={p_cert_rows} columns={cert_cols} pageSize={5} />
+                <div style={{ height: 300, width: '100%' }}>
+                    <DataGrid rows={n_cert_rows} columns={cert_cols} pageSize={5} />
                 </div>
             </div>
-
         </div>
 
     )
 
 }
 
-export default Postgre
+export default Nodejs

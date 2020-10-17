@@ -4,7 +4,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import Rating from '../Rating/Rating'
 
-export const p_book_cols = [
+export const book_cols = [
 
 
     { field: 'id', headerName: 'ID', width: 50 },
@@ -28,7 +28,7 @@ export const p_book_cols = [
         field: "",
         headerName: "Rating",
         sortable: false,
-        width: 200,
+        width: 300,
         disableClickEventBubbling: true,
         renderCell: () => {
             return < Rating />
@@ -47,7 +47,17 @@ export const p_book_rows = [
     { id: 4, name: 'PostgreSQL Administration', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' },
     { id: 4, name: 'PostgreSQL for DBA', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' }
 
-
 ];
 
+
+export const n_book_rows = [
+    { id: 1, name: 'Node.js Design Patterns', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'October 14, 2020' },
+    { id: 2, name: 'Beginning Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'March 14, 2020' },
+
+    { id: 3, name: 'Web Development with Node', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'January 14, 2020' },
+
+    { id: 4, name: 'Practical Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'November 14, 2020' },
+
+
+];
 

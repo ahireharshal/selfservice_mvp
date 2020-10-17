@@ -5,7 +5,7 @@ import Rating from '../Rating/Rating'
 
 
 
-export const p_training_cols = [
+export const training_cols = [
     { field: 'id', headerName: 'ID', width: 50 },
 
     {
@@ -29,7 +29,7 @@ export const p_training_cols = [
         field: "",
         headerName: "Rating",
         sortable: false,
-        width: 200,
+        width: 300,
         disableClickEventBubbling: true,
         renderCell: () => {
             return <Rating />
@@ -57,6 +57,17 @@ export const p_training_rows = [
     { id: 10, training_name: 'AWS Redshift', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
 ];
+
+
+export const n_training_rows = [
+    { id: 1, training_name: 'Nodejs web development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 2, training_name: 'Nodejs for backend develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+
+    { id: 3, training_name: 'Nodejs basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
+
+];
+
+
 
 
 
