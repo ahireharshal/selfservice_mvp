@@ -13,7 +13,6 @@ import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
-import Badge from '../Badge/Badge'
 import {p_training_rows, training_cols} from './training'
 import {p_book_rows, book_cols} from './handbooks'
 import {p_cert_rows, cert_cols} from './certfications'
@@ -47,12 +46,6 @@ const Postgre = () => {
 
     const classes = useStyles();
 
-
-
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
 
 

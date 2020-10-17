@@ -50,4 +50,16 @@ export const n_cert_rows = [
 ];
 
 
+export const a_cert_rows = [
+    { id: 'A001', name: 'AngularJs Associate', link: 'https://openjsf.org/certification/', type: 'Internal' },
+
+    { id: 'A002', name: 'AngularJs: Professional', link: 'https://openjsf.org/certification/', type: 'External' },
+
+
+
+
+];
+
+
+
 

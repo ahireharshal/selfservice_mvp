@@ -13,9 +13,9 @@ import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
-import {n_training_rows, training_cols} from './training'
-import {n_book_rows, book_cols} from './handbooks'
-import {n_cert_rows, cert_cols} from './certfications'
+import {a_training_rows, training_cols} from './training'
+import {a_book_rows, book_cols} from './handbooks'
+import {a_cert_rows, cert_cols} from './certfications'
 import VDO from '../CardMedia/CardMedia'
 
 const useStyles = makeStyles((theme) => ({
@@ -41,12 +41,10 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Nodejs = () => {
+const AngularJS = () => {
 
 
     const classes = useStyles();
-
-
 
 
 
@@ -64,7 +62,7 @@ const Nodejs = () => {
             </div>
             <div>
                 <div style={{ height: 300, width: '100%' }}>
-                    <DataGrid rows={n_training_rows} columns={training_cols} pageSize={5}  />
+                    <DataGrid rows={a_training_rows} columns={training_cols} pageSize={5}  />
                 </div>
             </div>
 
@@ -80,7 +78,7 @@ const Nodejs = () => {
             </div>
             <div>
                 <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={n_book_rows} columns={book_cols} pageSize={5} />
+                    <DataGrid rows={a_book_rows} columns={book_cols} pageSize={5} />
                 </div>
             </div>
 
@@ -126,7 +124,7 @@ const Nodejs = () => {
             </div>
             <div>
                 <div style={{ height: 300, width: '100%' }}>
-                    <DataGrid rows={n_cert_rows} columns={cert_cols} pageSize={5} />
+                    <DataGrid rows={a_cert_rows} columns={cert_cols} pageSize={5} />
                 </div>
             </div>
         </div>
@@ -135,4 +133,4 @@ const Nodejs = () => {
 
 }
 
-export default Nodejs
+export default AngularJS

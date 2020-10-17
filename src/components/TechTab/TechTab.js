@@ -17,11 +17,10 @@ import './TechTab.css'
 
 import Nodejs from './Nodejs'
 
+import AngularJS from './Angularjs'
 
 
 
-
-import Badge from '../Badge/Badge'
 
 import Postgres from './Postgres'
 
@@ -127,7 +126,7 @@ export default function ScrollableTabsButtonForce() {
       <Nodejs />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <AngularJS />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Four

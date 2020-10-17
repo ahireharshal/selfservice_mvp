@@ -36,7 +36,7 @@ export const book_cols = [
     }
 ];
 
-export const p_book_rows = [
+export const r_book_rows = [
     { id: 1, name: 'PostgreSQL: Up and Running', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'October 14, 2020' },
     { id: 2, name: 'Mastering PostgreSQL', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'March 14, 2020' },
 
@@ -49,24 +49,5 @@ export const p_book_rows = [
 
 ];
 
-
-export const n_book_rows = [
-    { id: 1, name: 'Node.js Design Patterns', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'October 14, 2020' },
-    { id: 2, name: 'Beginning Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'March 14, 2020' },
-
-    { id: 3, name: 'Web Development with Node', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'January 14, 2020' },
-
-    { id: 4, name: 'Practical Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'November 14, 2020' },
-
-
-];
-
-export const a_book_rows = [
-    { id: 1, name: 'AngularJs Design Patterns', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'October 14, 2020' },
-    { id: 2, name: 'Beginning AngularJs.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'March 14, 2020' },
-
-    { id: 3, name: 'UI Development with AngularJs', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'January 14, 2020' },
-
-];
 
 

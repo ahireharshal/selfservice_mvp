@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player/youtube'
 const VDO = ({link})=>{
 return (<div>
 
-<ReactPlayer url={link} height="150px" width="250px"/>
+<ReactPlayer url={link} height="150px" width="250px" controls="true"/>
 
 </div>)
 }

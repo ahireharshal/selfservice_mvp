@@ -37,7 +37,7 @@ export const training_cols = [
     },
 ];
 
-export const p_training_rows = [
+export const r_training_rows = [
     { id: 1, training_name: 'AWS EC2', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
     { id: 2, training_name: 'AWS Lambda', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
@@ -55,26 +55,6 @@ export const p_training_rows = [
 
     { id: 9, training_name: 'AWS ESC', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
     { id: 10, training_name: 'AWS Redshift', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-
-];
-
-
-export const n_training_rows = [
-    { id: 1, training_name: 'Nodejs web development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 2, training_name: 'Nodejs for backend develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-
-    { id: 3, training_name: 'Nodejs basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
-
-];
-
-
-
-
-export const a_training_rows = [
-    { id: 1, training_name: 'AngularJS web development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 2, training_name: 'AngularJS for UI develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-
-    { id: 3, training_name: 'AngularJS basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
 
 ];
 
