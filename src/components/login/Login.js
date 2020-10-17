@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect, useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import { Button, Grid } from '@material-ui/core';
@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Alert from '@material-ui/lab/Alert';
 import FormControl from '@material-ui/core/FormControl';
 import ConfirmUser from '../ConfirmUser/ConfirmUser'
-
+import { MusicPlayerContext } from '../../appContext'
 const users = require("../../MockData/users.json")
 const roles = require("../../MockData/roles.json")
 
@@ -39,46 +39,50 @@ const UserNotFoundErrMsg = () => {
 
 function Login() {
 
+    const [state, setState] = useContext(MusicPlayerContext);
     const [role, setRole] = React.useState('Not Selected');
     const [email, setEmail] = React.useState('')
     const [userNotFoundErr, setUserNotFoundErr] = React.useState(false)
-    const [showConfirmUser, setShowConfirmUser] = React.useState(false)
     const [user, setUser] = React.useState({})
-    const [showLogin, setShowLogin] = React.useState(true)
 
     const handleChange = (event) => {
         setRole(event.target.value);
     };
+
     const handleOnSubmitEmailId = () => {
         let userFound = users.users.filter((v) => { return email.toLowerCase() === v.email.toLowerCase() })
         if (userFound.length > 0) {
             setUserNotFoundErr(false)
             setUser(userFound[0])
-            setShowLogin(false)
-            setShowConfirmUser(true)
+            setState(state => ({ ...state, showLogin: false }))
+            setState(state => ({ ...state, showConfirmPage: true }))
+            setState(state => ({ ...state, breadcrumbs: [...state.breadcrumbs, ...['Home']] }))
+
         } else {
             setUserNotFoundErr(true)
-        }
-    }
-
-    const handleBackButton = () => {
-        setShowLogin(true)
-        setShowConfirmUser(false)
+        } 
     }
 
     const classes = useStyles();
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
-
-
+    }, [])
 
     return (
         <Grid container spacing={10}>
-            <Grid className="topmargin" item xs={12}>
 
-                {showLogin && <div>
+
+
+            <Grid className="topmargin" item xs={12}>
+            <img src="/LTI.png" alt="LTI" width="100" height="80"></img>
+
+            <br></br>
+<br></br>
+
+
+
+                {state.showLogin && <div>
                     <Typography variant="h4" gutterBottom>
                         Hi There 👋, Welcome to Self Service Portal
       </Typography>
@@ -130,7 +134,7 @@ function Login() {
                     <br></br>
                     {userNotFoundErr && <UserNotFoundErrMsg />}
                 </div>}
-                {showConfirmUser && <ConfirmUser user={user} role={role} handleBackButton={handleBackButton}></ConfirmUser>}
+                <ConfirmUser user={user} role={role}></ConfirmUser>
 
             </Grid>
         </Grid>

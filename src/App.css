@@ -41,3 +41,8 @@
 .main-div{
   margin-top: 3%!important;
 }
+
+.makeStyles-root-19 {
+  flex-grow: 1;
+  max-width: 1000px!important;
+}

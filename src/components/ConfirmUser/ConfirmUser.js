@@ -1,67 +1,93 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
 import Dashboard from '../Dashboard/Dashboard'
+import { MusicPlayerContext } from '../../appContext'
+import './ConfirmUser.css'
 
 
-const ConfirmUser = ({ user, role, handleBackButton }) => {
 
 
 
-    const [showDashboard, setShowDashBoard] =useState(false)
-const [showConfirmPage, setShowConfirmPage] = useState(true)
+import SelfService from '../../SelfService/SelfService'
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-const handleBackButton2 = () => {
-    setShowConfirmPage(true)
-    setShowDashBoard(false)
+
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+
+
+
+
+
+const Test = () => {
+    return <h1>Helloooooo</h1>
 }
+const ConfirmUser = ({ user, role }) => {
 
+    const [state, setState] = useContext(MusicPlayerContext);
 
     return (
         <div>
 
-{ showConfirmPage &&  <div> <Button size="small" variant="contained" onClick={() => {
-                handleBackButton()
+            { state.showConfirmPage && <div> <Button size="small" variant="contained" onClick={() => {
+                setState(state => ({ ...state, showLogin: true }))
+                setState(state => ({ ...state, showConfirmPage: false }))
+                setState(state => ({ ...state, breadcrumbs: [state.breadcrumbs.pop()] }))
             }}>
                 Go back
                 </Button>
-            <br></br>
-            <br></br>         <br></br>
-            <Typography variant="h4" gutterBottom>
-                Confirm below details,
-      </Typography>
+                <br></br>
+                <br></br>         <br></br>
+                <Typography variant="h4" gutterBottom>
+                    Hi, {user.first_name}
+                </Typography>
 
-            <br></br>
-            <Typography variant="h6" gutterBottom>
-                First Name: {user.first_name}
+                <div>
+                    <Paper elevation={3}>   
+                        <Link className="link-styles" to="/selfservice">        <Button className="button-height" size="large" >Self Service Artifacts        </Button></Link>
+                        <Link className="link-styles" to="/home"><Button className="button-height" size="large" >Group Knowledge Sessions  </Button></Link>
+                        <Link className="link-styles" to="/inbox">        <Button className="button-height" size="large" >Help Desk   </Button></Link>
+                    </Paper>
+                </div>
+                <br></br>
 
-            </Typography>
-            <Typography variant="h6" gutterBottom>
-                Last Name: {user.last_name}
+                <br></br>
+                <main>
 
-            </Typography>
-            <Typography variant="h6" gutterBottom>
-                NID: {user.nid}
+                    <Switch>
+                        <Route path="/selfservice" component={SelfService} exact />
+                    </Switch>
+                </main>
 
-            </Typography>
-            <Typography variant="h6" gutterBottom>
-                Role: {role}
+                <br></br>
 
-            </Typography>
-            <br></br>
-            <br></br>
-            <Button size="large" variant="contained" color="secondary" onClick={()=>{
-                setShowDashBoard(true)
-                setShowConfirmPage(false)
+
+
+
+
+
+                <br></br>
+                <br></br>
+                <Button size="large" variant="contained" color="secondary" onClick={() => {
+
+                    console.log('1', state)
+
+                    setState(state => ({ ...state, showConfirmPage: false }))
+
+                    setState(state => ({ ...state, showDashboard: true }))
+
+                    console.log('2', state)
+
                 }}>
-                Correct
+                    Correct
                 </Button>
 
-            <Button size="large" variant="outlined" color="secondary">
-                Incorrect
+                <Button size="large" variant="outlined" color="secondary">
+                    Incorrect
                 </Button></div>
-        }
-        { showDashboard && <Dashboard handleBackButton2= {handleBackButton2}/>}
+            }
+            <Dashboard />
 
         </div>
 

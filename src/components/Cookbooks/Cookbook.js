@@ -27,9 +27,8 @@ const CookBooks = () => {
         return (
             <React.Fragment>
 
-
                 <Grid item xs={3}>
-                    <Paper className={classes.paper}><div>
+                    <Paper elevation={1}  className={classes.paper}><div>
                         <div>AWS EC2 Handbook</div>
                         <div><IconButton aria-label="download" href="/aws.pdf" target="_blank">
                             <CloudDownloadIcon fontSize="large" />
@@ -37,7 +36,7 @@ const CookBooks = () => {
                     </div></Paper>
                 </Grid>
                 <Grid item xs={3}>
-                    <Paper className={classes.paper}><div>
+                    <Paper elevation={1}  className={classes.paper}><div>
                         <div>Coding Best Practice</div>
                         <div><IconButton aria-label="download" href="/aws.pdf" target="_blank">
                             <CloudDownloadIcon fontSize="large" />
@@ -67,23 +66,11 @@ const CookBooks = () => {
 
     return (
         <div>
-            <Typography variant="h5" gutterBottom>
-                Handbooks
-
-            </Typography>
-            <br></br>
-            <br></br>
-
             <Grid container spacing={3}>
                 <Grid container item xs={12} spacing={8}>
                     <FormRow />
                 </Grid>
-                <Grid container item xs={12} spacing={8}>
-                    <FormRow />
-                </Grid>
-                <Grid container item xs={12} spacing={8}>
-                    <FormRow />
-                </Grid>
+
             </Grid>
 
         </div>

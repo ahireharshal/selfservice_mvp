@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Radio from '@material-ui/core/Radio';
@@ -9,6 +9,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import { Button } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Report from '../Report/Report'
+import { MusicPlayerContext } from '../../appContext'
 
 const questions = require('../../MockData/questions.json')
 
@@ -26,13 +27,15 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Dashboard = ({ handleBackButton2 }) => {
+const Dashboard = () => {
+    const [state, setState] = useContext(MusicPlayerContext);
+
+
+console.log('ss ',state)
+
     const [value, setValue] = React.useState([]);
 
 
-    console.log("xxxxxx ", value)
-    const [showDash, setShowDash] = React.useState(true)
-const [showReport, setShowReport] = React.useState(false)
     const getValue = (i) => {
         let x = value[i]
         if (x) {
@@ -54,14 +57,18 @@ const [showReport, setShowReport] = React.useState(false)
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
-      
+
     return (<div>
 
 
-        {showDash && <div> <Button size="small" variant="contained" onClick={() => {
-        handleBackButton2()
+        {state.showDashboard && <div> <Button size="small" variant="contained" onClick={() => {
+
+            setState(state => ({ ...state, showDashboard: false }))
+            setState(state => ({ ...state, showConfirmPage: true }))
+
+
         }}>
             Go back
                 </Button>
@@ -95,23 +102,28 @@ const [showReport, setShowReport] = React.useState(false)
                 })
             }
 
-<br></br>
-                    <br></br>
+            <br></br>
+            <br></br>
 
-                    <Button size="large" variant="contained" color="secondary" onClick={()=>{
-                            setShowReport(true)
-                            setShowDash(false)
-                    }}>
-                        Submit
+            <Button size="large" variant="contained" color="secondary" onClick={() => {
+
+
+console.log('ss ',state)
+                setState(state => ({ ...state, showDashboard: false }))
+                setState(state => ({ ...state, showReport: true }))
+
+
+            }}>
+                Submit
                 </Button>
-                    <br></br>
-                    <br></br>
+            <br></br>
+            <br></br>
 
         </div>}
 
 
 
-                        {showReport && <Report value= {value}/> }
+        {state.showReport && <Report value={value} />}
 
     </div>
     )

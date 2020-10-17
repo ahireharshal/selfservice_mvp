@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import Typography from '@material-ui/core/Typography';
 import './Report.css'
 import Button from "@material-ui/core/Button";
@@ -13,6 +13,7 @@ import Paper from '@material-ui/core/Paper';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import MyResponsiveRadar from '../Chart/ReportRadar'
 
+import { MusicPlayerContext } from '../../appContext'
 
 import CookBooks from '../../components/Cookbooks/Cookbook'
 
@@ -138,6 +139,9 @@ const rows = [
 
 const Report = ({ value }) => {
 
+
+    const [state, setState] = useContext(MusicPlayerContext);
+
     const classes = useStyles();
 
 
@@ -190,7 +194,7 @@ const Report = ({ value }) => {
                     <Paper className={classes.paper}>
                         <Grid container spacing={0}>
 
-                            <Grid item xs={0} sm container>
+                            <Grid item xs={1} sm container>
                                 <Grid item xs container direction="column" spacing={0}>
                                     <Grid item xs>
                                         <Typography variant="h6" gutterBottom>
