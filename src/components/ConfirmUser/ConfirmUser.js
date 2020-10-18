@@ -6,8 +6,8 @@ import { MusicPlayerContext } from '../../appContext'
 import './ConfirmUser.css'
 
 
-
-
+import Navbar from '../Navbar/Navbar'
+import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
 
 import SelfService from '../../SelfService/SelfService'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
@@ -30,19 +30,27 @@ const ConfirmUser = ({ user, role }) => {
     return (
         <div>
 
-            { state.showConfirmPage && <div> <Button size="small" variant="contained" onClick={() => {
-                setState(state => ({ ...state, showLogin: true }))
-                setState(state => ({ ...state, showConfirmPage: false }))
-                setState(state => ({ ...state, breadcrumbs: [state.breadcrumbs.pop()] }))
-            }}>
-                Go back
-                </Button>
-                <br></br>
-                <br></br>         <br></br>
-                <Typography variant="h4" gutterBottom>
-                    Hi, {user.first_name}
-                </Typography>
 
+
+            { state.showConfirmPage && <div>
+                
+                
+
+                <Navbar />
+
+                
+
+                <br></br>
+                <br></br>
+                <br></br>
+                <Typography variant="h4" gutterBottom>
+                    Hi Harshal,
+                </Typography>
+                <Typography variant="h6" gutterBottom>
+              Welcome to Self service portal.
+                </Typography>
+                <br></br>
+                <br></br>      
                 <div>
                     <Paper elevation={3}>   
                         <Link className="link-styles" to="/selfservice">        <Button className="button-height" size="large" >Self Service Artifacts        </Button></Link>
@@ -80,12 +88,10 @@ const ConfirmUser = ({ user, role }) => {
                     console.log('2', state)
 
                 }}>
-                    Correct
+                    Continue
                 </Button>
 
-                <Button size="large" variant="outlined" color="secondary">
-                    Incorrect
-                </Button></div>
+         </div>
             }
             <Dashboard />
 

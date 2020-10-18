@@ -13,9 +13,9 @@ import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
-import {r_training_rows, training_cols} from './training'
-import {r_book_rows, book_cols} from './handbooks'
-import {r_tutorials_rows, tutorials_cols} from './tutorial'
+import {g_training_rows, training_cols} from './training'
+import {g_book_rows, book_cols} from './handbooks'
+import {g_tutorials_rows, tutorials_cols} from './tutorial'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const Redis = () => {
+const Github = () => {
 
 
     const classes = useStyles();
@@ -62,8 +62,8 @@ const Redis = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={r_training_rows} columns={training_cols} pageSize={5}  />
+                <div style={{ height: 300, width: '100%' }}>
+                    <DataGrid rows={g_training_rows} columns={training_cols} pageSize={5}  />
                 </div>
             </div>
 
@@ -79,7 +79,7 @@ const Redis = () => {
             </div>
             <div>
                 <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={r_book_rows} columns={book_cols} pageSize={5} />
+                    <DataGrid rows={g_book_rows} columns={book_cols} pageSize={5} />
                 </div>
             </div>
 
@@ -93,8 +93,8 @@ const Redis = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: '1000px', width: '100%' }}>
-                    <DataGrid rows={r_tutorials_rows} rowHeight ="200" columns={tutorials_cols} pageSize={10} />
+                <div style={{ height: '600px', width: '100%' }}>
+                    <DataGrid rows={g_tutorials_rows} rowHeight ="200" columns={tutorials_cols} pageSize={10} />
                 </div>
             </div>
 
@@ -105,4 +105,4 @@ const Redis = () => {
 
 }
 
-export default Redis
+export default Github

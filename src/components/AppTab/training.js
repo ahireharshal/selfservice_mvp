@@ -38,24 +38,20 @@ export const training_cols = [
 ];
 
 export const r_training_rows = [
-    { id: 1, training_name: 'AWS EC2', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 2, training_name: 'AWS Lambda', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 1, training_name: 'Learn Redis And Utilize Jedis With Spring Data Redis', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 2, training_name: 'Learn Redis from Scratch', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
-    { id: 3, training_name: 'Terraform', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
+    { id: 3, training_name: 'Redis', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
 
-    { id: 4, training_name: 'Big Data', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 4, 2020' },
+    { id: 4, training_name: 'Redis basics', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 4, 2020' },
+];
 
-    { id: 5, training_name: 'AWS Security', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
-    { id: 6, training_name: 'Coding Standard', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 12, 2020' },
+export const g_training_rows = [
+    { id: 1, training_name: 'GitHub Learning Lab', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 2, training_name: 'GitHub begineer', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
-    { id: 7, training_name: 'Python Advance Level', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 3, 2020' },
-
-    { id: 8, training_name: 'AWS VPC', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 13, 2020' },
-
-    { id: 9, training_name: 'AWS ESC', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 10, training_name: 'AWS Redshift', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-
+    { id: 3, training_name: 'GitHub Command Line', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
 ];
 
 

@@ -9,7 +9,7 @@ import Box from '@material-ui/core/Box';
 import './AppTab.css'
 
 import Redis from './redis'
-
+import Github from './github'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -100,6 +100,15 @@ export default function ScrollableTabsButtonForce() {
 
 <Redis />
       </TabPanel>
+      <TabPanel value={value} index={1}>
+
+
+<Github />
+      </TabPanel>
+
+
+
+
 
     </div>
   );

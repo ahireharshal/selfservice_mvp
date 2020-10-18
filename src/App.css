@@ -38,17 +38,23 @@
 }
 
 
-.main-div{
-  margin-top: 3%!important;
+.makeStyles-root-26 {
+  flex-grow: 1;
+  max-width: 1000px!important;
 }
 
-.makeStyles-root-19 {
+.makeStyles-root-24 {
+  flex-grow: 1;
+  max-width: 1000px!important;
+}
+
+.makeStyles-root-65 {
   flex-grow: 1;
   max-width: 1000px!important;
 }
 
 
-.makeStyles-root-60 {
-  flex-grow: 1;
-  max-width: 1000px!important;
+.makeStyles-root-91 > * {
+  margin: 8px;
+  margin-left: 21px!important;
 }

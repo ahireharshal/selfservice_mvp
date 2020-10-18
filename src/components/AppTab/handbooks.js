@@ -50,4 +50,11 @@ export const r_book_rows = [
 ];
 
 
+export const g_book_rows = [
+    { id: 1, name: 'Pro Git', link: 'https://www.amazon.com/Introducing-GitHub-Non-Technical-Peter-Bell-ebook/dp/B00PHTRLL0', last_modified: 'October 14, 2020' },
+    { id: 2, name: 'GitHub For Dummies', link: 'https://www.amazon.com/Introducing-GitHub-Non-Technical-Peter-Bell-ebook/dp/B00PHTRLL0', last_modified: 'March 14, 2020' },
 
+    { id: 3, name: 'Introducing GitHub: A Non-Technical Guide', link: 'https://www.amazon.com/Introducing-GitHub-Non-Technical-Peter-Bell-ebook/dp/B00PHTRLL0', last_modified: 'January 14, 2020' },
+
+
+];
