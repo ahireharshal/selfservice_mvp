@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import IconButton from '@material-ui/core/IconButton';
 import Rating from '../Rating/Rating'
@@ -31,8 +31,9 @@ export const training_cols = [
         sortable: false,
         width: 300,
         disableClickEventBubbling: true,
-        renderCell: () => {
-            return <Rating />
+        renderCell: (d) => {
+            console.log(d)
+            return <Rating key={d.rowIndex}/>
         }
     },
 ];

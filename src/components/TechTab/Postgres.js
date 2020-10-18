@@ -63,7 +63,7 @@ const Postgre = () => {
             </div>
             <div>
                 <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={p_training_rows} columns={training_cols} pageSize={5}  />
+                    <DataGrid  rows={p_training_rows} columns={training_cols} pageSize={5}  />
                 </div>
             </div>
 
