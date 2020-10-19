@@ -15,7 +15,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-
+import {fav_rows} from '../ConfirmUser/favorites'
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 300,
@@ -69,7 +69,9 @@ export default function RecipeReviewCard({xtitle}) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="add to favorites" onClick={()=>{
+            fav_rows.push({ id: '1', type: 'Blog Post', link: 'https://en.wikipedia.org/wiki/PostgreSQL'})
+        }}>
           <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share">

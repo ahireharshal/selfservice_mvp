@@ -24,14 +24,14 @@ class Chat extends Component {
         author: 'me',
         type: 'text',
         data: {
-          text: 'What is my tic id?'
+          text: 'What is my email id?'
         }
       },
       {
         author: 'them',
         type: 'text',
         data: {
-          text: 'Your tic id is N633D3. Thanks for reaching out to us Harshal.'
+          text: 'Your email id is harshal.ahire@lntinfotech.com. Thanks for reaching out to us Harshal.'
         }
      },
      {

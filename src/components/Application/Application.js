@@ -32,7 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Application = () => {
     const classes = useStyles();
-    console.log('technogy')
 
     return (
         <div className={classes.root}>

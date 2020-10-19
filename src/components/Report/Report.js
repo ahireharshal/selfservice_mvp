@@ -145,7 +145,6 @@ const Report = ({ value }) => {
     const classes = useStyles();
 
 
-    console.log("bbbbb ", value)
 
     let score = 0
     let total = 0
@@ -155,8 +154,6 @@ const Report = ({ value }) => {
         score = score + parseInt(v.a)
         total = total + 100
     })
-    console.log("score", score)
-    console.log("total", total)
 
     useEffect(() => {
         window.scrollTo(0, 0)

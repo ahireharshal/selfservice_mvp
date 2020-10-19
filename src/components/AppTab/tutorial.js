@@ -16,7 +16,6 @@ export const tutorials_cols = [
         width: 300,
         disableClickEventBubbling: true,
         renderCell: (d) => {
-            console.log(d.value)
             return <VDO link={d.value} height="100"></VDO>
         }
     },

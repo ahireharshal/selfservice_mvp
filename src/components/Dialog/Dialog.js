@@ -11,18 +11,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AlertDialogSlide({ show , closePopup}) {
+export default function AlertDialogSlide() {
     const [open, setOpen] = React.useState(false);
-
-useEffect(()=>{
-    if (show) {
-        setOpen(true)
-    }else{
-        setOpen(false)
-    }
-},[open])
-
-
 
     return (
         <div>
@@ -31,7 +21,6 @@ useEffect(()=>{
                 open={open}
                 TransitionComponent={Transition}
                 keepMounted
-                onClose={closePopup(false)}
                 aria-labelledby="alert-dialog-slide-title"
                 aria-describedby="alert-dialog-slide-description"
             >
@@ -43,11 +32,8 @@ useEffect(()=>{
           </DialogContentText>
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={closePopup(false)} color="primary">
-                        Disagree
-          </Button>
-                    <Button onClick={closePopup(false)} color="primary">
-                        Agree
+                    <Button onClick={setOpen(false)} color="primary">
+                        Close
           </Button>
                 </DialogActions>
             </Dialog>

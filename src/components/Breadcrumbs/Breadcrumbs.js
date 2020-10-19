@@ -33,7 +33,6 @@ export default function CustomizedBreadcrumbs() {
 
     const [state, setState] = useContext(MusicPlayerContext);
 
-console.log('3',state)
 
   return (
     <Breadcrumbs aria-label="breadcrumb">

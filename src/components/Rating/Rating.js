@@ -181,7 +181,6 @@ const useStyles = makeStyles({
 export default function HoverRating({r_index}) {
 
 
-  console.log('key',r_index)
 
 
 
@@ -192,7 +191,6 @@ const [showPopUp, setShowPopUp] = useState(false)
 
 
 
-console.log(value, 'csss')
   return (
 
     <div>

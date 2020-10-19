@@ -17,7 +17,6 @@ export const book_cols = [
         width: 200,
         disableClickEventBubbling: true,
         renderCell: (d) => {
-            console.log(d)
         return <a href={d.value} target="_blank" rel="noopener noreferrer">{d.value}</a>
         }
     },

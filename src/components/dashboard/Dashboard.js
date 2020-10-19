@@ -31,7 +31,6 @@ const Dashboard = () => {
     const [state, setState] = useContext(MusicPlayerContext);
 
 
-console.log('ss ',state)
 
     const [value, setValue] = React.useState([]);
 
@@ -87,7 +86,6 @@ console.log('ss ',state)
 
                             <br />
                             <RadioGroup aria-label="options" name={v.id} value={getValue(i)} onChange={(event) => {
-                                console.log("ccc", value[0])
                                 handleChange(event)
                             }}>
                                 {v.option.map((v, i) => {
@@ -108,7 +106,6 @@ console.log('ss ',state)
             <Button size="large" variant="contained" color="secondary" onClick={() => {
 
 
-console.log('ss ',state)
                 setState(state => ({ ...state, showDashboard: false }))
                 setState(state => ({ ...state, showReport: true }))
 

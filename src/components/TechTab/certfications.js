@@ -17,7 +17,6 @@ export const cert_cols = [
         width: 300,
         disableClickEventBubbling: true,
         renderCell: (d) => {
-            console.log(d)
         return <a href={d.value} target="_blank" rel="noopener noreferrer">{d.value}</a>
         }
     },
