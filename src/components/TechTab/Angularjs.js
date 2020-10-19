@@ -12,7 +12,6 @@ import Paper from '@material-ui/core/Paper';
 import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-import Cookbook from '../Cookbooks/Cookbook'
 import {a_training_rows, training_cols} from '../Knowledge/training'
 import {a_book_rows, book_cols} from './handbooks'
 import {a_cert_rows, cert_cols} from './certfications'

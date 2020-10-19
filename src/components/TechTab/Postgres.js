@@ -12,7 +12,6 @@ import Paper from '@material-ui/core/Paper';
 import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-import Cookbook from '../Cookbooks/Cookbook'
 import {p_book_rows, book_cols} from './handbooks'
 import {p_cert_rows, cert_cols} from './certfications'
 import VDO from '../CardMedia/CardMedia'

@@ -60,6 +60,12 @@
 }
 
 
+.makeStyles-root-74 {
+  flex-grow: 1;
+  max-width: 1000px!important;
+}
+
+
 .makeStyles-root-91 > * {
   margin: 8px;
   margin-left: 21px!important;

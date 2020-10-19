@@ -1,22 +1,15 @@
 import React, { useEffect } from 'react'
 
 import Typography from '@material-ui/core/Typography';
-import Button from "@material-ui/core/Button";
 import { makeStyles } from '@material-ui/core/styles';
 import {
     DataGrid,
 } from "@material-ui/data-grid";
-import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import Card from '../Card/Card'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-import Cookbook from '../Cookbooks/Cookbook'
-import {n_training_rows, training_cols} from '../Knowledge/training'
 import {n_book_rows, book_cols} from './handbooks'
 import {n_cert_rows, cert_cols} from './certfications'
-import VDO from '../CardMedia/CardMedia'
 
 const useStyles = makeStyles((theme) => ({
     root: {

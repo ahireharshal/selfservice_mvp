@@ -15,7 +15,6 @@ import MyResponsiveRadar from '../Chart/ReportRadar'
 
 import { MusicPlayerContext } from '../../appContext'
 
-import CookBooks from '../../components/Cookbooks/Cookbook'
 
 
 
@@ -269,7 +268,6 @@ const Report = ({ value }) => {
 
 
 
-            <CookBooks />
 
             <br></br>
             <br></br>
