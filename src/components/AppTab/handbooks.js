@@ -35,15 +35,15 @@ export const book_cols = [
 ];
 
 export const r_book_rows = [
-    { id: 1, name: 'PostgreSQL: Up and Running', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'October 14, 2020' },
-    { id: 2, name: 'Mastering PostgreSQL', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'March 14, 2020' },
+    { id: 1, name: 'Redis in Action', link: 'https://en.wikipedia.org/wiki/Redis', last_modified: 'October 14, 2020' },
+    { id: 2, name: 'Redis Essentials', link: 'https://en.wikipedia.org/wiki/Redis', last_modified: 'March 14, 2020' },
 
-    { id: 3, name: 'PostgreSQL 9. 0 High Performance', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'January 14, 2020' },
+    { id: 3, name: 'Redis Cookbook', link: 'https://en.wikipedia.org/wiki/Redis', last_modified: 'January 14, 2020' },
 
-    { id: 4, name: 'PostgreSQL Developer', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' },
+    { id: 4, name: 'Mastering Redis', link: 'https://en.wikipedia.org/wiki/Redis', last_modified: 'November 14, 2020' },
 
-    { id: 4, name: 'PostgreSQL Administration', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' },
-    { id: 4, name: 'PostgreSQL for DBA', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' }
+    { id: 4, name: 'Redis 4.x Cookbook: ', link: 'https://en.wikipedia.org/wiki/Redis', last_modified: 'November 14, 2020' },
+    { id: 4, name: 'Learning Redis', link: 'https://www.amazon.com/Learning-Redis-Vinoo-Das/dp/1783980125', last_modified: 'November 14, 2020' }
 
 ];
 

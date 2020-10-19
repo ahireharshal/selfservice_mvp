@@ -2,7 +2,7 @@ import React from 'react'
 
 export const fav_cols = [
     { field: 'id', headerName: 'ID', width: 80 },
-    { field: 'type', headerName: 'Type', width: 100 },
+    { field: 'type', headerName: 'Type', width: 200 },
     { field: 'name', headerName: 'Name', width: 250 },
 
     {

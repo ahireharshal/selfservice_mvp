@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -15,6 +15,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+
+import {fav_rows} from '../ConfirmUser/favorites'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 export default function RecipeReviewCard({img, xtitle}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+  const [fav, setFav] = useState('none')
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -67,7 +70,10 @@ AUGUST 25, 2020 — ROADSHOW continues to prioritize the safety and health of it
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+      <IconButton aria-label="add to favorites" color={fav} onClick={(event)=>{
+         fav === 'none'? setFav('secondary') : setFav('none')
+           fav_rows.push({ id: '1', type: 'Road Shows', name: xtitle, link: 'https://www.ironpeacockevents.com/roadshow-events'})
+        }}>
           <FavoriteIcon />
         </IconButton>
         <IconButton aria-label="share">

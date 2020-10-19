@@ -95,7 +95,7 @@ export default function VerticalTabs() {
                 <div>
 
 
-submit a ticket
+ Coming soon!
 
 
                 </div>
