@@ -33,7 +33,7 @@ export const training_cols = [
         disableClickEventBubbling: true,
         renderCell: (d) => {
             console.log(d)
-            return <Rating key={d.rowIndex}/>
+            return <Rating r_index={d.rowIndex}/>
         }
     },
 ];
