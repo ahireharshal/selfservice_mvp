@@ -4,7 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-import Paper from '@material-ui/core/Paper';
 
 import RoadShowCard from '../RoadShowCard/RoadShowCard'
 import Grid from '@material-ui/core/Grid';
@@ -133,7 +132,6 @@ export default function VerticalTabs() {
                         <br></br>
                     Amazon Web Services (AWS) External**
                      <br></br>
-                        <br></br>
                     </Typography>
                 </div>
                 <div>
@@ -150,11 +148,10 @@ export default function VerticalTabs() {
                         <br></br>
                     NodeJS
                      <br></br>
-                        <br></br>
                     </Typography>
                 </div>
                 <div>
-                    <div style={{ height: 400, width: '100%' }}>
+                    <div style={{ height: 300, width: '100%' }}>
                         <DataGrid rows={n_training_rows} columns={training_cols} pageSize={5} />
                     </div>
                 </div>
@@ -166,11 +163,10 @@ export default function VerticalTabs() {
                         <br></br>
                      AngularJS
                      <br></br>
-                        <br></br>
                     </Typography>
                 </div>
                 <div>
-                    <div style={{ height: 400, width: '100%' }}>
+                    <div style={{ height: 300, width: '100%' }}>
                         <DataGrid rows={a_training_rows} columns={training_cols} pageSize={5} />
                     </div>
                 </div>

@@ -57,7 +57,6 @@ const Postgre = () => {
                     <br></br>
                      Handbooks
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>
@@ -69,9 +68,7 @@ const Postgre = () => {
         <div>
                 <Typography variant="h6" gutterBottom>
                     <br></br>
-                    <br></br>
                      Blog Posts
-                     <br></br>
                     <br></br>
                 </Typography>
             </div>
@@ -100,10 +97,8 @@ const Postgre = () => {
             <div>
                 <Typography variant="h6" gutterBottom>
                     <br></br>
-                    <br></br>
                      Certfications
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>

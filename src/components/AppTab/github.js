@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Typography from '@material-ui/core/Typography';
-import Button from "@material-ui/core/Button";
 import { makeStyles } from '@material-ui/core/styles';
 import {
     DataGrid,
 } from "@material-ui/data-grid";
-import IconButton from '@material-ui/core/IconButton';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Card from '../Card/Card'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-import Cookbook from '../Cookbooks/Cookbook'
 import {g_training_rows, training_cols} from './training'
 import {g_book_rows, book_cols} from './handbooks'
 import {g_tutorials_rows, tutorials_cols} from './tutorial'
@@ -59,7 +52,6 @@ const Github = () => {
                     <br></br>
                      KT Sessions/Videos
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>
@@ -75,7 +67,6 @@ const Github = () => {
                     <br></br>
                      Upcoming Trainings
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>
@@ -91,7 +82,6 @@ const Github = () => {
                     <br></br>
                      Handbooks
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>

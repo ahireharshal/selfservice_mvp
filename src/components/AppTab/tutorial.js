@@ -1,6 +1,4 @@
 import React from 'react'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import IconButton from '@material-ui/core/IconButton';
 import Rating from '../Rating/Rating'
 import VDO from '../CardMedia/CardMedia'
 import Typography from '@material-ui/core/Typography';
@@ -56,7 +54,6 @@ export const tutorials_cols = [
 export const r_tutorials_rows = [
     { id: 1, video_link: 'https://www.youtube.com/watch?v=Hbt56gFj998',training_name:"Redis Basics", duration: '1:30 Hr', trainer: 'Harshal Ahire' },
     { id: 2, video_link: 'https://www.youtube.com/watch?v=Hbt56gFj998',training_name:"Redis tutorials", duration: '1:30 Hr', trainer: 'Harshal Ahire' },
-    { id: 3, video_link: 'https://www.youtube.com/watch?v=Hbt56gFj998',training_name:"Redis for data science", duration: '1:30 Hr', trainer: 'Harshal Ahire' },
     { id: 4, video_link: 'https://www.youtube.com/watch?v=Hbt56gFj998',training_name:"Redis", duration: '1:30 Hr', trainer: 'Harshal Ahire' },
 
 ];

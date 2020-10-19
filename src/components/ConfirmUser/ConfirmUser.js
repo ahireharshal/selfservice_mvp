@@ -4,12 +4,10 @@ import { Button } from '@material-ui/core';
 import Dashboard from '../Dashboard/Dashboard'
 import { MusicPlayerContext } from '../../appContext'
 import './ConfirmUser.css'
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import Navbar from '../Navbar/Navbar'
-import Breadcrumbs from '../Breadcrumbs/Breadcrumbs'
+
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import SelfService from '../../SelfService/SelfService'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { Route, Switch, Link } from 'react-router-dom';
 import Slide from '@material-ui/core/Slide';
 
 
@@ -24,13 +22,12 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 
-import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Knowledge from '../Knowledge/Knowledge'
 
 import Help from '../Help/Help'
 
-import {fav_rows, fav_cols} from './favorites'
+import { fav_rows, fav_cols } from './favorites'
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -62,7 +59,7 @@ const ConfirmUser = () => {
                         <Link className="link-styles" to="/selfservice">        <Button className="button-height" size="large" >Self Service Artifacts </Button></Link>
                         <Link className="link-styles" to="/knowledge"><Button className="button-height" size="large" >Group Knowledge Sessions  </Button></Link>
                         <Link className="link-styles" to="/help">        <Button className="button-height" size="large" >Help Desk   </Button></Link>
-                        <Link className="link-styles float-right">        <Button className="button-height" size="large" onClick={()=>{
+                        <Link className="link-styles float-right">        <Button className="button-height" size="large" onClick={() => {
                             setOpen(true)
                         }}><BookmarksIcon />Favorites</Button></Link>
                     </Paper>
@@ -89,15 +86,15 @@ const ConfirmUser = () => {
 
                 <br></br>
                 <br></br>
-      
+
 
             </div>
             }
             <Dashboard />
             {open && <div>
                 <Dialog
-                 fullWidth={true}
-                 maxWidth="md"
+                    fullWidth={true}
+                    maxWidth="md"
                     open={open}
                     TransitionComponent={Transition}
                     keepMounted
@@ -112,10 +109,10 @@ const ConfirmUser = () => {
                                     <DataGrid rows={fav_rows} columns={fav_cols} pageSize={6} />
                                 </div>
                             </div>
-                </DialogContentText>
+                        </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                        <Button onClick={()=>{
+                        <Button onClick={() => {
                             setOpen(false)
                         }} color="primary">
                             Close

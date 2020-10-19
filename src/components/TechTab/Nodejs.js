@@ -61,7 +61,6 @@ const Nodejs = () => {
                     <br></br>
                      Handbooks
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
             <div>
@@ -76,7 +75,6 @@ const Nodejs = () => {
                     <br></br>
                      Blog Posts
                      <br></br>
-                    <br></br>
                 </Typography>
             </div>
 
@@ -103,7 +101,6 @@ const Nodejs = () => {
 
             <div>
                 <Typography variant="h6" gutterBottom>
-                    <br></br>
                     <br></br>
                      Certfications
                      <br></br>
