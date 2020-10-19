@@ -29,12 +29,6 @@ export const p_cert_rows = [
     { id: 'PH871', name: 'PostgreSQL Associate', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'Internal' },
 
     { id: 'BJ561', name: 'PostgreSQL: Professional', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'External' },
-    { id: 'BJ531', name: 'PostgreSQL: Professional', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'External' },
-    { id: 'BJ521', name: 'PostgreSQL: Professional', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'External' },
-
-
-
-
 ];
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -39,9 +39,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeReviewCard({xtitle}) {
+export default function RecipeReviewCard({xtitle, pURL}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+
+
+  const [fav, setFav] = useState('none')
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -69,8 +72,9 @@ export default function RecipeReviewCard({xtitle}) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" onClick={()=>{
-            fav_rows.push({ id: '1', type: 'Blog Post', link: 'https://en.wikipedia.org/wiki/PostgreSQL'})
+        <IconButton aria-label="add to favorites" color={fav} onClick={(event)=>{
+         fav === 'none'? setFav('secondary') : setFav('none')
+            fav_rows.push({ id: '1', type: 'Blog Post', name: xtitle, link: pURL})
         }}>
           <FavoriteIcon />
         </IconButton>

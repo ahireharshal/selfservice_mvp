@@ -78,15 +78,15 @@ const Postgre = () => {
 
 <Grid container spacing={3}>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="Mastering Postgres" /></div>
+<div><Card xtitle="Mastering Postgres" pURL="https://en.wikipedia.org/wiki/PostgreSQL"/></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="All about Postgres"/></div>
+<div><Card xtitle="All about Postgres" pURL="https://www.postgresqltutorial.com/what-is-postgresql/"/></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="Is Postgres is dead?"/></div>
+<div><Card xtitle="Is Postgres is dead?" pURL="https://www.tutorialspoint.com/postgresql/index.htm"/></div>
 
                 </Grid>
 
@@ -102,7 +102,7 @@ const Postgre = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 400, width: '100%' }}>
+                <div style={{ height: 250, width: '100%' }}>
                     <DataGrid rows={p_cert_rows} columns={cert_cols} pageSize={5} />
                 </div>
             </div>

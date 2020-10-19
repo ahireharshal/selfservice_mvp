@@ -2,7 +2,8 @@ import React from 'react'
 
 export const fav_cols = [
     { field: 'id', headerName: 'ID', width: 80 },
-    { field: 'type', headerName: 'Type', width: 300 },
+    { field: 'type', headerName: 'Type', width: 100 },
+    { field: 'name', headerName: 'Name', width: 250 },
 
     {
         field: "link",
@@ -17,7 +18,7 @@ export const fav_cols = [
 ];
 
 export let fav_rows = [
-    { id: '1', type: 'Blog Post', link: 'https://www.enterprisedb.com/training/postgres-certification'},
+    { id: '1', type: 'Blog Post', name:'Postgres Certification',  link: 'https://www.enterprisedb.com/training/postgres-certification'},
 ];
 
 
