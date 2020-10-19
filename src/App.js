@@ -2,6 +2,10 @@ import React,{useContext} from 'react';
 import Typography from '@material-ui/core/Typography';
 import './App.css'
 
+
+import Chat from '../src/components/Chat/Chat'
+
+
 import CookBooks from './components/Cookbooks/Cookbook'
 import Report from './components/Report/Report'
 import Dashboard from './components/Dashboard/Dashboard';
@@ -18,8 +22,8 @@ const App = () => {
 
             <div>
             <ConfirmUser />
+        <Chat />
             </div>
-
         </MusicPlayerProvider>
     )
 }

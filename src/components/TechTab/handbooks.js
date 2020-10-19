@@ -30,8 +30,8 @@ export const book_cols = [
         sortable: false,
         width: 300,
         disableClickEventBubbling: true,
-        renderCell: () => {
-            return < Rating />
+        renderCell: (d) => {
+            return <Rating r_index={d.rowIndex}/>
         }
     }
 ];

@@ -86,13 +86,15 @@ export default function VerticalTabs() {
         <Application />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      Coming Soon!
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+      Coming Soon!
+
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+      Coming Soon!
+
       </TabPanel>
     </div>
   );

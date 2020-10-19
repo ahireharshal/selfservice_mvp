@@ -56,37 +56,6 @@ const Redis = () => {
                 <Typography variant="h6" gutterBottom>
                     <br></br>
                     <br></br>
-                     Upcoming Trainings
-                     <br></br>
-                    <br></br>
-                </Typography>
-            </div>
-            <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={r_training_rows} columns={training_cols} pageSize={5}  />
-                </div>
-            </div>
-
-
-            <div>
-                <Typography variant="h6" gutterBottom>
-                    <br></br>
-                    <br></br>
-                     Handbooks
-                     <br></br>
-                    <br></br>
-                </Typography>
-            </div>
-            <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid rows={r_book_rows} columns={book_cols} pageSize={5} />
-                </div>
-            </div>
-
-            <div>
-                <Typography variant="h6" gutterBottom>
-                    <br></br>
-                    <br></br>
                      KT Sessions/Videos
                      <br></br>
                     <br></br>
@@ -97,6 +66,24 @@ const Redis = () => {
                     <DataGrid rows={r_tutorials_rows} rowHeight ="200" columns={tutorials_cols} pageSize={10} />
                 </div>
             </div>
+
+
+            <div>
+                <Typography variant="h6" gutterBottom>
+                    <br></br>
+                    <br></br>
+                     Handbooks/Cookbooks
+                     <br></br>
+                    <br></br>
+                </Typography>
+            </div>
+            <div>
+                <div style={{ height: 400, width: '100%' }}>
+                    <DataGrid rows={r_book_rows} columns={book_cols} pageSize={5} />
+                </div>
+            </div>
+
+
 
 
         </div>

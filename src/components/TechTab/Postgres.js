@@ -13,7 +13,6 @@ import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
-import {p_training_rows, training_cols} from './training'
 import {p_book_rows, book_cols} from './handbooks'
 import {p_cert_rows, cert_cols} from './certfications'
 import VDO from '../CardMedia/CardMedia'
@@ -56,22 +55,6 @@ const Postgre = () => {
                 <Typography variant="h6" gutterBottom>
                     <br></br>
                     <br></br>
-                     Upcoming Trainings
-                     <br></br>
-                    <br></br>
-                </Typography>
-            </div>
-            <div>
-                <div style={{ height: 400, width: '100%' }}>
-                    <DataGrid  rows={p_training_rows} columns={training_cols} pageSize={5}  />
-                </div>
-            </div>
-
-
-            <div>
-                <Typography variant="h6" gutterBottom>
-                    <br></br>
-                    <br></br>
                      Handbooks
                      <br></br>
                     <br></br>
@@ -98,15 +81,15 @@ const Postgre = () => {
 
 <Grid container spacing={3}>
                 <Grid  item xs={4} spacing={2}>
-<div><Card /></div>
+<div><Card xtitle="Mastering Postgres" /></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card /></div>
+<div><Card xtitle="All about Postgres"/></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card /></div>
+<div><Card xtitle="Is Postgres is dead?"/></div>
 
                 </Grid>
 

@@ -52,6 +52,23 @@ const Github = () => {
     return (
 
         <div>
+
+<div>
+                <Typography variant="h6" gutterBottom>
+                    <br></br>
+                    <br></br>
+                     KT Sessions/Videos
+                     <br></br>
+                    <br></br>
+                </Typography>
+            </div>
+            <div>
+                <div style={{ height: '600px', width: '100%' }}>
+                    <DataGrid rows={g_tutorials_rows} rowHeight ="200" columns={tutorials_cols} pageSize={10} />
+                </div>
+            </div>
+
+            
             <div>
                 <Typography variant="h6" gutterBottom>
                     <br></br>
@@ -83,20 +100,7 @@ const Github = () => {
                 </div>
             </div>
 
-            <div>
-                <Typography variant="h6" gutterBottom>
-                    <br></br>
-                    <br></br>
-                     KT Sessions/Videos
-                     <br></br>
-                    <br></br>
-                </Typography>
-            </div>
-            <div>
-                <div style={{ height: '600px', width: '100%' }}>
-                    <DataGrid rows={g_tutorials_rows} rowHeight ="200" columns={tutorials_cols} pageSize={10} />
-                </div>
-            </div>
+  
 
 
         </div>

@@ -6,3 +6,7 @@
 .button-height{
     padding: 15px 20px!important;
 }
+
+.float-right{
+    float: right;
+}

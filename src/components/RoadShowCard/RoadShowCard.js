@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeReviewCard({xtitle}) {
+export default function RecipeReviewCard({img, xtitle}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -50,22 +50,20 @@ export default function RecipeReviewCard({xtitle}) {
   return (
     <Card className={classes.root}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            HA
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
+
         title={xtitle}
         subheader="September 14, 2016"
       />
+  <CardMedia
+        className={classes.media}
+        image={img}
+        title="road1"
+      />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        PostgreSQL also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. 
+        2020 ROADSHOW TOUR CANCELED
+AUGUST 25, 2020 — ROADSHOW continues to prioritize the safety and health of its event guests, volunteers, appraisers, staff and crew.
+
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

@@ -32,7 +32,6 @@ export const training_cols = [
         width: 300,
         disableClickEventBubbling: true,
         renderCell: (d) => {
-            console.log(d)
             return <Rating r_index={d.rowIndex}/>
         }
     },

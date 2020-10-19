@@ -13,7 +13,7 @@ import Card from '../Card/Card'
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 import Cookbook from '../Cookbooks/Cookbook'
-import {n_training_rows, training_cols} from './training'
+import {n_training_rows, training_cols} from '../Knowledge/training'
 import {n_book_rows, book_cols} from './handbooks'
 import {n_cert_rows, cert_cols} from './certfications'
 import VDO from '../CardMedia/CardMedia'
@@ -53,20 +53,6 @@ const Nodejs = () => {
     return (
 
         <div>
-            <div>
-                <Typography variant="h6" gutterBottom>
-                    <br></br>
-                    <br></br>
-                     Upcoming Trainings
-                     <br></br>
-                    <br></br>
-                </Typography>
-            </div>
-            <div>
-                <div style={{ height: 300, width: '100%' }}>
-                    <DataGrid rows={n_training_rows} columns={training_cols} pageSize={5}  />
-                </div>
-            </div>
 
 
             <div>
