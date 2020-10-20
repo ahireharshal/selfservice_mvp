@@ -1,41 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Typography from '@material-ui/core/Typography';
-import Button from "@material-ui/core/Button";
-import { makeStyles } from '@material-ui/core/styles';
 import {
     DataGrid,
 } from "@material-ui/data-grid";
-import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import Card from '../Card/Card'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
-import {a_training_rows, training_cols} from '../Knowledge/training'
 import {a_book_rows, book_cols} from './handbooks'
 import {a_cert_rows, cert_cols} from './certfications'
-import VDO from '../CardMedia/CardMedia'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        padding: theme.spacing(4),
-        maxWidth: 200,
-    },
-    image: {
-        width: 128,
-        height: 128,
-    },
-    img: {
-        margin: 'auto',
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-    },
-}));
 
 
 
@@ -43,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
 const AngularJS = () => {
 
 
-    const classes = useStyles();
 
 
 

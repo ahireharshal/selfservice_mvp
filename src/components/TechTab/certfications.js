@@ -1,8 +1,5 @@
 import React from 'react'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import IconButton from '@material-ui/core/IconButton';
 
-import Rating from '../Rating/Rating'
 
 export const cert_cols = [
 

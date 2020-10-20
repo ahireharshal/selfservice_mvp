@@ -1,32 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import {
     DataGrid,
 } from "@material-ui/data-grid";
 import {r_book_rows, book_cols} from './handbooks'
 import {r_tutorials_rows, tutorials_cols} from './tutorial'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
-    paper: {
-        padding: theme.spacing(4),
-        maxWidth: 200,
-    },
-    image: {
-        width: 128,
-        height: 128,
-    },
-    img: {
-        margin: 'auto',
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-    },
-}));
 
 
 
@@ -34,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 const Redis = () => {
 
 
-    const classes = useStyles();
 
 
 

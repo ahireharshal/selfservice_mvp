@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
-import { MusicPlayerContext } from '../../appContext'
 import './ConfirmUser.css'
 
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
@@ -37,11 +36,10 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const ConfirmUser = () => {
     const [open, setOpen] = React.useState(false);
-    const [state, setState] = useContext(MusicPlayerContext);
 
     return (
         <div>
-            { state.showConfirmPage && <div>
+            { true && <div>
                 <br></br>
                 <br></br>
                 <br></br>

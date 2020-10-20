@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, { useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import Box from '@material-ui/core/Box';
@@ -16,11 +16,9 @@ import Slide from '@material-ui/core/Slide';
 
 import './Rating.css'
 
-import FormLabel from '@material-ui/core/FormLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import Checkbox from '@material-ui/core/Checkbox';
 
 
@@ -53,7 +51,6 @@ const RatingPopUp = ({showPopUp, setShowPopUp})=>{
 
 
   const { gilad, jason, antoine, a,b,c ,aa,bb,cc} = state;
-  const error = [gilad, jason, antoine].filter((v) => v).length !== 2;
   return (
     <div>
 
