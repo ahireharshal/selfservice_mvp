@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
-import Dashboard from '../Dashboard/Dashboard'
 import { MusicPlayerContext } from '../../appContext'
 import './ConfirmUser.css'
 
@@ -50,7 +49,7 @@ const ConfirmUser = () => {
                     Hi Harshal,
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-                    Welcome to Self service portal.
+                    Welcome to Hadoop to Cloud Knowledge Portal.
                 </Typography>
                 <br></br>
                 <br></br>
@@ -90,7 +89,6 @@ const ConfirmUser = () => {
 
             </div>
             }
-            <Dashboard />
             {open && <div>
                 <Dialog
                     fullWidth={true}
