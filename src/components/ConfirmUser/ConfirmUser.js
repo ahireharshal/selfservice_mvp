@@ -58,7 +58,7 @@ const ConfirmUser = () => {
     console.log(role)
 
 
-    
+
     const handleChange = (event) => {
         setRole(event.target.value);
     };
@@ -95,7 +95,7 @@ const ConfirmUser = () => {
 
 
                 <Grid container spacing={1}>
-                <Grid  item xs={2} spacing={1}>   <h3> Select User Type: </h3></Grid>
+                <Grid  item xs={2} spacing={1}>   <h3> Select Persona: </h3></Grid>
                 <Grid  item xs={10} spacing={1}>
                 <FormControl variant="outlined"  className="select-user">
                      
