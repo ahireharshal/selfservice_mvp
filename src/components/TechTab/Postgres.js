@@ -51,15 +51,15 @@ const Postgre = () => {
 
 <Grid container spacing={3}>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="Mastering Postgres" pURL="https://en.wikipedia.org/wiki/PostgreSQL"/></div>
+<div><Card xtitle="Amazon S3 Update" pURL="https://aws.amazon.com/blogs/aws/amazon-s3-update-three-new-security-access-control-features/"/></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="All about Postgres" pURL="https://www.postgresqltutorial.com/what-is-postgresql/"/></div>
+<div><Card xtitle="Amazon SageMaker" pURL="https://aws.amazon.com/blogs/aws/amazon-sagemaker-leads-way-in-machine-learning/"/></div>
 
                 </Grid>
                 <Grid  item xs={4} spacing={2}>
-<div><Card xtitle="Is Postgres is dead?" pURL="https://www.tutorialspoint.com/postgresql/index.htm"/></div>
+<div><Card xtitle="New EC2 T4g Instances" pURL="https://aws.amazon.com/blogs/aws/new-t4g-instances-burstable-performance-powered-by-aws-graviton2/"/></div>
 
                 </Grid>
 

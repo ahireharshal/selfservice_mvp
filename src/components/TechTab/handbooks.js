@@ -1,25 +1,29 @@
 import React from 'react'
 import Rating from '../Rating/Rating'
-
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import IconButton from '@material-ui/core/IconButton';
 export const book_cols = [
 
 
     { field: 'id', headerName: 'ID', width: 50 },
-    { field: 'name', headerName: 'Name', width: 230 },
+    { field: 'name', headerName: 'Name', width: 330 },
 
     {
         field: "link",
-        headerName: "Link",
+        headerName: "Download",
         sortable: false,
-        width: 200,
+        width: 100,
         disableClickEventBubbling: true,
         renderCell: (d) => {
-        return <a href={d.value} target="_blank" rel="noopener noreferrer">{d.value}</a>
+
+            console.log(d)
+        return <div> <IconButton aria-label="download" href={d.value} target="_blank">
+                            <CloudDownloadIcon fontSize="large" /></IconButton></div>
         }
     },
 
 
-    { field: 'last_modified', headerName: 'Last Modified', width: 130 },
+    { field: 'last_modified', headerName: 'Last Modified', width: 200 },
     {
         field: "",
         headerName: "Rating",
@@ -33,27 +37,24 @@ export const book_cols = [
 ];
 
 export const p_book_rows = [
-    { id: 1, name: 'PostgreSQL: Up and Running', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'October 14, 2020' },
-    { id: 2, name: 'Mastering PostgreSQL', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'March 14, 2020' },
+    { id: 1, name: 'Amazon Web Services in Action', link: '/aws.pdf', last_modified: 'October 14, 2020' },
+    { id: 2, name: 'A Hands-On Guide to the Fundamentals of AWS Cloud', link: '/aws.pdf', last_modified: 'March 14, 2020' },
 
-    { id: 3, name: 'PostgreSQL 9. 0 High Performance', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'January 14, 2020' },
+    { id: 3, name: 'AWS Certified Solutions Architect', link: '/aws.pdf', last_modified: 'January 14, 2020' },
 
-    { id: 4, name: 'PostgreSQL Developer', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' },
+    { id: 4, name: 'AWS: The Most Complete Guide', link: '/aws.pdf', last_modified: 'November 14, 2020' },
 
-    { id: 4, name: 'PostgreSQL Administration', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' },
-    { id: 4, name: 'PostgreSQL for DBA', link: 'https://en.wikipedia.org/wiki/PostgreSQL', last_modified: 'November 14, 2020' }
+    { id: 4, name: 'AWS Administration', link: '/aws.pdf', last_modified: 'November 14, 2020' },
+    { id: 4, name: 'AWS for DBA', link: '/aws.pdf', last_modified: 'November 14, 2020' }
 
 ];
 
 
 export const n_book_rows = [
-    { id: 1, name: 'Node.js Design Patterns', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'October 14, 2020' },
-    { id: 2, name: 'Beginning Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'March 14, 2020' },
+    { id: 1, name: 'Apache Spark Using Azure Databricks', link: 'https://databricks.com/wp-content/uploads/2018/10/DB-for-Data-Science-Solution-Sheet.pdf', last_modified: 'October 14, 2020' },
+    { id: 2, name: 'DataBricks® PySpark 2.x', link: 'https://databricks.com/wp-content/uploads/2018/10/DB-for-Data-Science-Solution-Sheet.pdf', last_modified: 'March 14, 2020' },
 
-    { id: 3, name: 'Web Development with Node', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'January 14, 2020' },
-
-    { id: 4, name: 'Practical Node.js', link: 'https://en.wikipedia.org/wiki/Node.js', last_modified: 'November 14, 2020' },
-
+    { id: 3, name: 'Mastering DataBricks®', link: 'https://databricks.com/wp-content/uploads/2018/10/DB-for-Data-Science-Solution-Sheet.pdf', last_modified: 'January 14, 2020' },
 
 ];
 

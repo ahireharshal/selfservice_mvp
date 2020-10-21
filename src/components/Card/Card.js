@@ -61,7 +61,8 @@ export default function RecipeReviewCard({xtitle, pURL}) {
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        PostgreSQL also known as Postgres, is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. 
+        
+        These cloud computing web services provide a variety of basic abstract technical infrastructure and distributed computing building blocks and tools.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

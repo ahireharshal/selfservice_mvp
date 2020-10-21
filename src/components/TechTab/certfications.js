@@ -23,16 +23,16 @@ export const cert_cols = [
 ];
 
 export const p_cert_rows = [
-    { id: 'PH871', name: 'PostgreSQL Associate', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'Internal' },
+    { id: 'PH871', name: 'AWS Associate', link: 'https://aws.amazon.com/certification/', type: 'Internal' },
 
-    { id: 'BJ561', name: 'PostgreSQL: Professional', link: 'https://www.enterprisedb.com/training/postgres-certification', type: 'External' },
+    { id: 'BJ561', name: 'AWS: Professional', link: 'https://aws.amazon.com/certification/', type: 'External' },
 ];
 
 
 export const n_cert_rows = [
-    { id: 'N871', name: 'Nodejs Associate', link: 'https://openjsf.org/certification/', type: 'Internal' },
+    { id: 'N871', name: 'Databricks Certified Associate Developer for Apache Spark 3.0 ', link: 'https://academy.databricks.com/category/certifications', type: 'Internal' },
 
-    { id: 'N561', name: 'Nodejs: Professional', link: 'https://openjsf.org/certification/', type: 'External' },
+    { id: 'N561', name: 'Databricks: Professional', link: 'https://academy.databricks.com/category/certifications', type: 'External' },
 
 
 

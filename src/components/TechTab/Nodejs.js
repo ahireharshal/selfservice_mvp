@@ -35,7 +35,7 @@ const Nodejs = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 400, width: '100%' }}>
+                <div style={{ height: 300, width: '100%' }}>
                     <DataGrid rows={n_book_rows} columns={book_cols} pageSize={5} />
                 </div>
             </div>
@@ -79,7 +79,7 @@ const Nodejs = () => {
                 </Typography>
             </div>
             <div>
-                <div style={{ height: 300, width: '100%' }}>
+                <div style={{ height: 250, width: '100%' }}>
                     <DataGrid rows={n_cert_rows} columns={cert_cols} pageSize={5} />
                 </div>
             </div>
