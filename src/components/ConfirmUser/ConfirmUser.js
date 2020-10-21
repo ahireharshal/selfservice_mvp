@@ -47,7 +47,7 @@ const ConfirmUser = () => {
                     Hi Harshal,
                 </Typography>
                 <Typography variant="h6" gutterBottom>
-                    Welcome to Hadoop to Cloud Knowledge Portal.
+                Welcome to Hadoop on cloud user knowledge portal.
                 </Typography>
                 <br></br>
                 <br></br>

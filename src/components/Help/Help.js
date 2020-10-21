@@ -4,13 +4,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-
+import Ticket from './Ticket'
 
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
 
 import './Help.css'
+
+import Agent from './Agent'
+
+
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
 
@@ -78,14 +82,20 @@ export default function VerticalTabs() {
                 aria-label="Vertical tabs example"
                 className={classes.tabs}
             >
-                <Tab label="Submit Ticket" {...a11yProps(1)} />
+                <Tab label="Submit Ticket" {...a11yProps(0)} />
+                <Tab label="Chat" {...a11yProps(1)} />
 
             </Tabs>
+
+
+
+
+
             <TabPanel value={value} index={0}>
                 <div>
 
 
- Coming soon!
+                <Ticket />
 
 
                 </div>
@@ -95,6 +105,18 @@ export default function VerticalTabs() {
             </TabPanel>
 
 
+
+            <TabPanel value={value} index={1}>
+                <div>
+
+
+        <Agent />
+
+                </div>
+
+               
+
+            </TabPanel>
 
 
 

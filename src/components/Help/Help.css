@@ -1,0 +1,16 @@
+.text-format{
+    text-align: end!important;
+    margin-top: 20px!important;
+}
+
+.agent-list-width{
+    width: 290px!important;
+    border-style: solid;
+    border-color: #fafafa;
+}
+
+
+.MuiBadge-anchorOriginBottomRightCircle {
+    right: 14%;
+    bottom: 70%!important;
+}
