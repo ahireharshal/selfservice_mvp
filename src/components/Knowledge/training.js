@@ -60,10 +60,10 @@ export const p_training_rows = [
 
 
 export const n_training_rows = [
-    { id: 1, training_name: 'Nodejs web development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 2, training_name: 'Nodejs for backend develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 1, training_name: 'Databricks development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 2, training_name: 'Databricks mastering', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
-    { id: 3, training_name: 'Nodejs basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
+    { id: 3, training_name: 'Databricks basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
 
 ];
 
@@ -71,10 +71,10 @@ export const n_training_rows = [
 
 
 export const a_training_rows = [
-    { id: 1, training_name: 'AngularJS web development', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
-    { id: 2, training_name: 'AngularJS for UI develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 1, training_name: 'Apache spark basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
+    { id: 2, training_name: 'Apache spark for UI develoers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 14, 2020' },
 
-    { id: 3, training_name: 'AngularJS basic', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
+    { id: 3, training_name: 'Apache spark for data engineers', duration: '1:30 Hr', location: 'Harford, CT', date: 'October 24, 2020' },
 
 ];
 

@@ -142,7 +142,7 @@ export default function VerticalTabs() {
                     <Typography variant="h6" gutterBottom>
                         <br></br>
                         <br></br>
-                    NodeJS
+                    Databricks
                      <br></br>
                     </Typography>
                 </div>
@@ -157,7 +157,7 @@ export default function VerticalTabs() {
                     <Typography variant="h6" gutterBottom>
                         <br></br>
                         <br></br>
-                     AngularJS
+                        Apache Spark
                      <br></br>
                     </Typography>
                 </div>
