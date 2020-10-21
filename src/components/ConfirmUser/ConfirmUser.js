@@ -2,12 +2,12 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
 import './ConfirmUser.css'
+import Grid from '@material-ui/core/Grid';
 
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import SelfService from '../../SelfService/SelfService'
 import { Route, Switch, Link } from 'react-router-dom';
 import Slide from '@material-ui/core/Slide';
-
 
 import {
     DataGrid,
@@ -26,16 +26,42 @@ import Knowledge from '../Knowledge/Knowledge'
 import Help from '../Help/Help'
 
 import { fav_rows, fav_cols } from './favorites'
-
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
+const roles = {
+    "roles": [
+        "Business User",
+        "IT User",
+        "Data Scientist",
+        "Data Engineer"
+    ]
+}
+
+
+
 
 
 const ConfirmUser = () => {
     const [open, setOpen] = React.useState(false);
+
+
+    const [role, setRole] = React.useState('Select User Type');
+
+
+
+    console.log(role)
+
+
+    
+    const handleChange = (event) => {
+        setRole(event.target.value);
+    };
 
     return (
         <div>
@@ -60,6 +86,47 @@ const ConfirmUser = () => {
                             setOpen(true)
                         }}><BookmarksIcon />Favorites</Button></Link>
                     </Paper>
+                </div>
+                <br></br>
+
+                <div>
+
+
+
+
+                <Grid container spacing={1}>
+                <Grid  item xs={2} spacing={1}>   <h3> Select User Type: </h3></Grid>
+                <Grid  item xs={10} spacing={1}>
+                <FormControl variant="outlined"  className="select-user">
+                     
+                        <Select
+                            value={role}
+                            onChange={handleChange}
+                            displayEmpty
+
+                            inputProps={{ 'aria-label': 'Without label' }}
+                        >
+                            <MenuItem value="Not Selected" disabled>
+                                Select User Type
+                            </MenuItem>
+                            {
+                                roles.roles.map((v, i) => {
+                                    return <MenuItem value={v} key={i}>{v}</MenuItem>
+                                })
+                            }
+                        </Select>
+                    </FormControl>
+
+                </Grid>
+                </Grid>
+
+
+
+     
+
+
+
+
                 </div>
                 <br></br>
 

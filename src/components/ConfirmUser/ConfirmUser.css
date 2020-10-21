@@ -10,3 +10,7 @@
 .float-right{
     float: right;
 }
+
+.select-user{
+    width: 230px;
+}
