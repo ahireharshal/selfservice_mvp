@@ -15,13 +15,13 @@ import './Help.css'
 
 
 export const cols = [
-    { field: 'id', headerName: 'Ticket ID', width: 50 },
+    { field: 'id', headerName: 'Ticket ID', width: 25 },
 
 
-    { field: 'subject', headerName: 'Subject', width: 230 },
-    { field: 'desc', headerName: 'Description', width: 90 },
-    { field: 'status', headerName: 'Status', width: 120 },
-    { field: 'date', headerName: 'date', width: 120 },
+    { field: 'subject', headerName: 'Subject', width: 300 },
+    { field: 'desc', headerName: 'Description', width: 300 },
+    { field: 'status', headerName: 'Status', width: 90 },
+    { field: 'date', headerName: 'date', width: 200 },
 
 
 ];

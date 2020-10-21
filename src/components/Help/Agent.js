@@ -132,34 +132,28 @@ const myEventsList =[
     end: new Date(2015, 3, 17, 23, 30, 0),
   },
   {
-    id: 13,
-    title: 'Multi-day Event',
-    start: new Date(2015, 3, 20, 19, 30, 0),
-    end: new Date(2015, 3, 22, 2, 0, 0),
-  },
-  {
     id: 14,
-    title: 'Today',
+    title: 'Harshal - DevOps Connect',
     start: new Date(new Date().setHours(new Date().getHours() - 3)),
     end: new Date(new Date().setHours(new Date().getHours() + 3)),
   },
   {
     id: 15,
-    title: 'Point in Time Event',
+    title: 'Harshal - ICS team connect',
     start: now,
     end: now,
   },
   {
     id: 16,
-    title: 'Video Record',
-    start: new Date(2015, 3, 14, 15, 30, 0),
-    end: new Date(2015, 3, 14, 19, 0, 0),
+    title: 'Harshal - Connect with AWS',
+    start: new Date(2020, 9, 23, 15, 30, 0),
+    end: new Date(2020, 9, 24, 19, 0, 0),
   },
   {
     id: 17,
-    title: 'Dutch Song Producing',
-    start: new Date(2015, 3, 14, 16, 30, 0),
-    end: new Date(2015, 3, 14, 20, 0, 0),
+    title: 'Rohit - Prod Support',
+    start: new Date(2020, 9, 26, 16, 30, 0),
+    end: new Date(2020,9, 28, 20, 0, 0),
   },
   {
     id: 18,
@@ -364,7 +358,7 @@ const [agent, setAgent] = useState('')
                 </Grid>
                 <Grid item xs={7} spacing={1}>
                     <br></br>
-                   {agent &&  <><h4>Initiate a Chat with {agent} or check calender to schedule a meeting.</h4>  <button onClick={()=>{
+                   {agent &&  <><h4>Initiate a conversation with {agent} or check calender to schedule a meeting.</h4>  <button onClick={()=>{
                      setOpen(true)
                    }}>Calendar</button></>}
                    { agent && <form className={classes.root} noValidate autoComplete="off">
