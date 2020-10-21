@@ -1,8 +1,8 @@
 import React from 'react'
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import IconButton from '@material-ui/core/IconButton';
 import Rating from '../Rating/Rating'
 
+import EventIcon from '@material-ui/icons/Event';
 
 
 export const training_cols = [
@@ -16,7 +16,7 @@ export const training_cols = [
         disableClickEventBubbling: true,
         renderCell: () => {
             return <IconButton aria-label="download" href="/event.ics" target="_blank">
-                <CloudDownloadIcon fontSize="large" />
+                <EventIcon fontSize="large" />
             </IconButton>
         }
     },
