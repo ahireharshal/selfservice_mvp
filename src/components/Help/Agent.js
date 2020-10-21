@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Slide from '@material-ui/core/Slide';
 
 import Badge from '@material-ui/core/Badge';
 import {  withStyles } from '@material-ui/core/styles';
 
-
 import Avatar from '../Avatar/Avatar'
 
-import {
-    DataGrid,
-} from "@material-ui/data-grid";
 
 import './Help.css'
 
@@ -279,12 +280,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function FormPropsTextFields() {
+
+
+  const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+
+
+
     const classes = useStyles();
 const [agent, setAgent] = useState('')
-    const [subject, setSubject] = useState('')
-    const [desc, setDesc] = useState('')
-    const [rows, setRows] = useState([{ id: 1, subject: 'Help me to get AWS documents', desc: 'Hi,Could you please provide me the deatils of AWS EC2 instances. Thanks', status: 'Open', date: 'October 14, 2020' }])
 
+    const [open, setOpen] = React.useState(false);
 
 
     console.log('agent', agent)
@@ -357,9 +364,9 @@ const [agent, setAgent] = useState('')
                 </Grid>
                 <Grid item xs={7} spacing={1}>
                     <br></br>
-                    <br></br>
-                   {agent &&  `Initiate a Chat with ${agent}`}
-                    <br></br>
+                   {agent &&  <><h4>Initiate a Chat with {agent} or check calender to schedule a meeting.</h4>  <button onClick={()=>{
+                     setOpen(true)
+                   }}>Calendar</button></>}
                    { agent && <form className={classes.root} noValidate autoComplete="off">
                         <div>
 
@@ -372,10 +379,6 @@ const [agent, setAgent] = useState('')
                                             variant="outlined"
                                             rows="5"
                                             multiline={true}
-                                            onChange={(event) => {
-                                                setSubject(event.target.value)
-                                                console.log(event.target.value)
-                                            }}
                                         />
                                     </div>
                                 </Grid>
@@ -388,10 +391,7 @@ const [agent, setAgent] = useState('')
                                             id="outlined-required"
                                             defaultValue=""
                                             variant="outlined"
-                                            onChange={(event) => {
-                                                setSubject(event.target.value)
-                                                console.log(event.target.value)
-                                            }}
+                                     
                                         />
                                     </div>
                                 </Grid>
@@ -413,7 +413,37 @@ const [agent, setAgent] = useState('')
                 </Grid>
             </Grid>
 
-            <MyCalendar />
+     
+
+            {open && <div>
+                <Dialog
+                    fullWidth={true}
+                    maxWidth="md"
+                    open={open}
+                    TransitionComponent={Transition}
+                    keepMounted
+                    aria-labelledby="alert-dialog-slide-title"
+                    aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogTitle id="alert-dialog-slide-title">{"Favorites"}</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-slide-description">
+                            <div>
+                            <MyCalendar />
+                            </div>
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={() => {
+                            setOpen(false)
+                        }} color="primary">
+                            Close
+                </Button>
+                    </DialogActions>
+                </Dialog>
+            </div>}
+
+
         </div>
 
     );
