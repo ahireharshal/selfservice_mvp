@@ -76,37 +76,17 @@ export default function ScrollableTabsButtonForce() {
           textColor="primary"
           aria-label="scrollable force tabs example"
         >
-         
-         
 
 
-         
-
-         <Tab label="PostgreSQL" icon={<i class="devicon-postgresql-plain colored icon-size"></i>} {...a11yProps(0)} />
-
-         <Tab label="Nodejs" icon={<i class="devicon-nodejs-plain colored icon-size "></i>} {...a11yProps(0)} />
-         
-          <Tab label="AngularJs" icon={<i class="devicon-angularjs-plain colored icon-size"></i>} {...a11yProps(1)} />
-          <Tab label="Csharp" icon={<i class="devicon-csharp-plain colored icon-size"></i>} {...a11yProps(2)} />
-          <Tab label="Css3" icon={<i class="devicon-css3-plain colored icon-size"></i>} {...a11yProps(3)} />
-          <Tab label="dcoker" icon={<i class="devicon-docker-plain-wordmark colored icon-size"></i>} {...a11yProps(4)} />
-          <Tab label="Go" icon={<i class="devicon-go-plain colored icon-size"></i>} {...a11yProps(5)} />
-          <Tab label="Javascript" icon={<i class="devicon-javascript-plain colored icon-size"></i>} {...a11yProps(6)} />
-
-          <Tab label="Redhat" icon={<i class="devicon-redhat-plain colored colored icon-size"></i>} {...a11yProps(6)} />
-
-
-          <Tab label="Ruby" icon={<i class="devicon-ruby-plain colored icon-size"></i>} {...a11yProps(6)} />
-
-
-          <Tab label="typescript" icon={<i class="devicon-typescript-plain colored icon-size"></i>} {...a11yProps(6)} />
-
-
-          <Tab label="vim" icon={<i class="devicon-vim-plain colored icon-size"></i>} {...a11yProps(6)} />
-
-
-          <Tab label="redis" icon={<i class="devicon-redis-plain colored icon-size"></i>} {...a11yProps(6)} />
-
+         <Tab label="" icon={<img src="./aws.png"  alt="aws" width="100px"/>} {...a11yProps(0)} />
+          <Tab label="" icon={<img src="./Databricks.png"  alt="aws" width="100px"/>} {...a11yProps(2)} />
+          <Tab label="" icon={<img src="./Qliksense.png"  alt="aws" width="100px"/>} {...a11yProps(3)} />
+          <Tab label="" icon={<img src="./Apache_Spark.png"  alt="aws" width="100px"/>} {...a11yProps(4)} />
+          <Tab label="" icon={<img src="./talend.png"  alt="aws" width="100px"/>} {...a11yProps(0)} />
+          <Tab label="" icon={<img src="./snowflake.png"  alt="aws" width="100px"/>} {...a11yProps(0)} />
+       
+          <Tab label="" icon={<img src="./microstrategy.png"  alt="aws" width="100px"/>} {...a11yProps(1)} />
+       
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

@@ -358,7 +358,7 @@ const [agent, setAgent] = useState('')
                 </Grid>
                 <Grid item xs={7} spacing={1}>
                     <br></br>
-                   {agent &&  <><h4>Initiate a conversation with {agent} or check calender to schedule a meeting.</h4>  <button onClick={()=>{
+                   {agent &&  <><h4>Initiate a conversation with {agent} or check his calender to schedule a meeting.</h4>  <button onClick={()=>{
                      setOpen(true)
                    }}>Calendar</button></>}
                    { agent && <form className={classes.root} noValidate autoComplete="off">
