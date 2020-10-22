@@ -7,9 +7,10 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './AppTab.css'
-
+import Avatar from '@material-ui/core/Avatar';
 import Redis from './redis'
 import Github from './github'
+import { deepOrange, deepPurple } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
   },
+  purple: {
+    color: theme.palette.getContrastText(deepPurple[500]),
+    backgroundColor: deepPurple[500],
+  },
 }));
 
 export default function ScrollableTabsButtonForce() {
@@ -71,41 +76,22 @@ export default function ScrollableTabsButtonForce() {
           textColor="primary"
           aria-label="scrollable force tabs example"
         >
-         
-         
-         <Tab label="Redis" icon={<i class="devicon-redis-plain-wordmark  colored icon-size "></i>} {...a11yProps(0)} />
-      
 
-         <Tab label="Github" icon={<i class="devicon-github-plain-wordmark colored icon-size "></i>} {...a11yProps(0)} />
-
-
-         <Tab label="BitBucket" icon={<i class="devicon-bitbucket-plain-wordmark colored icon-size "></i>} {...a11yProps(0)} />
-
-
-
-         <Tab label="Visual Studio" icon={<i class="devicon-visualstudio-plain colored icon-size "></i>} {...a11yProps(0)} />
-
-         <Tab label="Tomcat" icon={<i class="devicon-tomcat-line-wordmark colored icon-size "></i>} {...a11yProps(0)} />
-
-         <Tab label="Redhat" icon={<i class="devicon-redhat-plain-wordmark colored icon-size "></i>} {...a11yProps(0)} />
-
-
-         <Tab label="AWS" icon={<i class="devicon-amazonwebservices-plain-wordmark colored icon-size "></i>} {...a11yProps(0)} />
-
+          <Tab label="Benchmark" icon={<Avatar variant="square" className={classes.purple}>B</Avatar>} {...a11yProps(0)} />
+          <Tab label="Pricing" icon={<Avatar variant="square" className={classes.purple}>P</Avatar>} {...a11yProps(0)} />
+          <Tab label="Pre-issuance" icon={<Avatar variant="square" className={classes.purple}>PI</Avatar>} {...a11yProps(0)} />
 
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-
-
-<Redis />
+         <Redis />
       </TabPanel>
       <TabPanel value={value} index={1}>
-
-
-<Github />
+         <Github />
       </TabPanel>
-
+      <TabPanel value={value} index={2}>
+         Coming Soon!
+      </TabPanel>
 
 
 

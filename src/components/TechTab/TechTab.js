@@ -101,16 +101,19 @@ export default function ScrollableTabsButtonForce() {
       <AngularJS />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+        Coming Soon!
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+      Coming Soon!
+
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+      Coming Soon!
+
       </TabPanel>
       <TabPanel value={value} index={6}>
-        Item Seven
+      Coming Soon!
+
       </TabPanel>
     </div>
   );
