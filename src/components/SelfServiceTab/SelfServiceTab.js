@@ -56,11 +56,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function VerticalTabs() {
 
-  const [state, setState] = useContext(MusicPlayerContext);
+  const [state, ] = useContext(MusicPlayerContext);
 
 
 
-  console.log('state', state)
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 

@@ -75,9 +75,7 @@ export default function VerticalTabs() {
 
 
 
-    const [state1, setState1] = useContext(MusicPlayerContext);
-
-
+    const [state1, ] = useContext(MusicPlayerContext);
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true,

@@ -52,6 +52,10 @@ const ConfirmUser = () => {
     const [open, setOpen] = React.useState(false);
     const [role, setRole] = React.useState('IT User');
 
+
+
+    console.log(state)
+    
     const handleChange = (event) => {
         setState(state => ({ ...state, userRole: event.target.value }))
         setRole(event.target.value);

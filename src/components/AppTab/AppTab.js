@@ -10,7 +10,7 @@ import './AppTab.css'
 import Avatar from '@material-ui/core/Avatar';
 import Redis from './redis'
 import Github from './github'
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
+import {deepPurple } from '@material-ui/core/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
