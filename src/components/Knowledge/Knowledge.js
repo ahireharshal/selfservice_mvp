@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-
+import { MusicPlayerContext } from '../../appContext'
 
 import RoadShowCard from '../RoadShowCard/RoadShowCard'
 import Grid from '@material-ui/core/Grid';
@@ -23,7 +23,6 @@ import { p_training_rows, n_training_rows, a_training_rows, training_cols } from
 import './Knowledge.css'
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
-
 
 
 
@@ -76,6 +75,9 @@ export default function VerticalTabs() {
 
 
 
+    const [state1, setState1] = useContext(MusicPlayerContext);
+
+
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true,
@@ -123,10 +125,10 @@ export default function VerticalTabs() {
 
                 </div>
 
-{state.checkedA && <><div>
+{state.checkedA && state1.userRole === "Business User" && <><div>
                     <Typography variant="h6" gutterBottom>
                         <br></br>
-                    Amazon Web Services (AWS) External**
+                    Amazon Web Services (AWS), Valid for Business Users**
                      <br></br>
                     </Typography>
                 </div>
@@ -138,11 +140,11 @@ export default function VerticalTabs() {
                 }
                
 
-                <div>
+               {state1.userRole === "IT User" && <><div>
                     <Typography variant="h6" gutterBottom>
                         <br></br>
                         <br></br>
-                    Databricks
+                    Databricks, Valid for IT Users**
                      <br></br>
                     </Typography>
                 </div>
@@ -150,14 +152,14 @@ export default function VerticalTabs() {
                     <div style={{ height: 300, width: '100%' }}>
                         <DataGrid rows={n_training_rows} columns={training_cols} pageSize={5} />
                     </div>
-                </div>
+            </div></> }
 
 
-                <div>
+            {state1.userRole === "IT User" && <><div>
                     <Typography variant="h6" gutterBottom>
                         <br></br>
                         <br></br>
-                        Apache Spark
+                        Apache Spark, Valid for IT Users**
                      <br></br>
                     </Typography>
                 </div>
@@ -165,7 +167,7 @@ export default function VerticalTabs() {
                     <div style={{ height: 300, width: '100%' }}>
                         <DataGrid rows={a_training_rows} columns={training_cols} pageSize={5} />
                     </div>
-                </div>
+                </div></>}
             </TabPanel>
             <TabPanel value={value} index={2}>
 
