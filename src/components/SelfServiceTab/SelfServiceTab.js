@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-
+import { MusicPlayerContext } from '../../appContext'
 import Technology from '../Technology/Technology'
 import Application from '../Application/Application'
 
@@ -55,6 +55,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function VerticalTabs() {
+
+  const [state, setState] = useContext(MusicPlayerContext);
+
+
+
+  console.log('state', state)
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -72,30 +78,19 @@ export default function VerticalTabs() {
         aria-label="Vertical tabs example"
         className={classes.tabs}
       >
-        <Tab label="Technology" {...a11yProps(0)} />
-        <Tab label="Applications" {...a11yProps(1)} />
+        {state.userRole === "IT User" &&  <Tab label="Technology" {...a11yProps(0)} /> }
+        {state.userRole === "Business User" &&  <Tab label="Applications" {...a11yProps(0)} /> }
         <Tab label="Data Center" {...a11yProps(2)} />
         <Tab label="Architecture" {...a11yProps(3)} />
         <Tab label="Best Practices" {...a11yProps(4)} />
 
       </Tabs>
-      <TabPanel value={value} index={0}>
+    {state.userRole === "IT User" &&   <TabPanel value={value} index={0}>
       <Technology />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
+      </TabPanel> }
+      {state.userRole === "Business User" &&  <TabPanel value={value} index={state.userRole === "Business User" ? 0 : 1}>
         <Application />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-      Coming Soon!
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-      Coming Soon!
-
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-      Coming Soon!
-
-      </TabPanel>
+      </TabPanel>}
     </div>
   );
 }

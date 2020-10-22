@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Typography from '@material-ui/core/Typography';
 import { Button } from '@material-ui/core';
 import './ConfirmUser.css'
 import Grid from '@material-ui/core/Grid';
+
+
+import { MusicPlayerContext } from '../../appContext'
+
 
 import BookmarksIcon from '@material-ui/icons/Bookmarks';
 import SelfService from '../../SelfService/SelfService'
@@ -43,23 +47,13 @@ const roles = {
     ]
 }
 
-
-
-
-
 const ConfirmUser = () => {
+    const [state, setState] = useContext(MusicPlayerContext);
     const [open, setOpen] = React.useState(false);
-
-
-    const [role, setRole] = React.useState('Select User Type');
-
-
-
-    console.log(role)
-
-
+    const [role, setRole] = React.useState('IT User');
 
     const handleChange = (event) => {
+        setState(state => ({ ...state, userRole: event.target.value }))
         setRole(event.target.value);
     };
 
@@ -120,13 +114,6 @@ const ConfirmUser = () => {
                 </Grid>
                 </Grid>
 
-
-
-     
-
-
-
-
                 </div>
                 <br></br>
 
@@ -142,11 +129,6 @@ const ConfirmUser = () => {
                 </main>
 
                 <br></br>
-
-
-
-
-
 
                 <br></br>
                 <br></br>

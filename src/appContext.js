@@ -5,7 +5,8 @@ let data ={
     showConfirmPage: true,
     showLogin:true,
     showReport: false,
-    breadcrumbs:['Login' ]
+    breadcrumbs:['Login' ],
+    userRole:'IT User'
 }
 
 const MusicPlayerContext = React.createContext([{}, () => {}]);
