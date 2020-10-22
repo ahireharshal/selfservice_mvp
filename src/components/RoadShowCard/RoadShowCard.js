@@ -57,7 +57,7 @@ export default function RecipeReviewCard({img, xtitle}) {
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
         2020 ROADSHOW TOUR CANCELED
-AUGUST 25, 2020 — ROADSHOW continues to prioritize the safety and health of its event guests, volunteers, appraisers, staff and crew.
+DECEMBER 25, 2020 — ROADSHOW continues to prioritize the safety and health of its event guests, volunteers, appraisers, staff and crew.
 
         </Typography>
       </CardContent>
